@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>退换货管理</title>
+		<link rel="stylesheet" type="text/css" href="../../skin/css/main.css" />
+		<script src="../../lib/seajs/sea.js" type="text/javascript" charset="utf-8" id="seajsnode"></script>
+	</head>
+
+	<body>
+		<div id="content-wrapper">
+			<div id="content">
+				<span class="arm-title-s">退换货管理</span>
+				<div class="arm-nav-wrapper"><span class="arm-nav-text" data-href="change_refund">退换货管理</span><i class="sui-icon icon-arrow-right arm-nav-arrow"></i><span class="arm-nav-text">要求退换出物料列表</span></div>
+				<div class="arm-title-first has-back-icon" data-href="change_refund"><i class="sui-icon icon-pc-chevron-right"></i>
+						<div class="arm-title-text">要求退换出物料列表</div>
+						<div class="arm-back-wrapper">
+							
+						</div>
+					</div>
+				<div class="sui-form form-horizontal mt20 clearfix">
+					
+						<ul class="query-group clearfix">
+							<li>
+							<label class="control-label"> 
+								物料大类
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+									<span class="dropdown-inner">
+										<a id="drop9" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+											<input value="hz" name="city" type="hidden" class="">
+											<i class="caret"></i><span>请选择</span>
+										</a>
+										<ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+											<li role="presentation" class="">
+												<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+											</li>
+										</ul>
+									</span>
+								</span>
+							</div>
+							</li>
+							<li>
+							<label class="control-label">
+								物料小类
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+									<span class="dropdown-inner">
+										<a id="drop9" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+											<input value="hz" name="city" type="hidden" class="">
+											<i class="caret"></i><span>请选择</span>
+										</a>
+										<ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+											<li role="presentation" class="">
+												<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+											</li>
+										</ul>
+									</span>
+								</span>
+							</div>
+							</li>
+							<li>
+							<label class="control-label">
+								物料种类
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+									<span class="dropdown-inner">
+										<a id="drop9" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+											<input value="hz" name="city" type="hidden" class="">
+											<i class="caret"></i><span>请选择</span>
+										</a>
+										<ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+											<li role="presentation" class="">
+												<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+											</li>
+										</ul>
+									</span>
+								</span>
+							</div>
+							</li>
+		
+							<li class="query-li">
+								<a class="sui-btn btn-primary" style="margin-left:52px;">查询</a>
+							</li>
+						</ul>
+						<span class="table-title-md">要求退换出物料列表</span>
+						<div id="table2" class="table-wrapper"></div>
+						<div class="arm-submit-group">
+							<button type="button" class="sui-btn btn-primary">确认出库</button>
+						</div>
+				</div>
+
+			</div>
+		</div>
+		<script id="template1" type="text/html">
+			<div id="myModal1" tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade">	
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<!--<button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close">×</button>-->
+					<h4 id="myModalLabel" class="modal-title">Modal title111</h4>
+				  </div>
+				  <div class="modal-body">
+					<form class="sui-form scrollwidthpop sui-validate label-w">
+						<span class="table-title-sm">退换货物料列表</span>
+						<div class="roleAddcontent">
+							<div id="table3" class="table-wrapper" style="width: 800px;"></div>
+						</div>
+				  	</form>
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" data-ok="modal"  class="sui-btn btn-primary btn-large">确认</button>
+					<button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large">取消</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</script>	
+		
+	</body>
+
+</html>

@@ -1,0 +1,253 @@
+.index-content-wrapper{
+	background:none ;
+}
+.index-content{
+	min-width: 1356px;
+    min-height: 867px;
+	height: 100%;
+	display:-webkit-flex;
+    display:-moz-flex;
+    display:flex;
+    display:-ms-flexbox;
+}
+.flex-item{
+	/*background: antiquewhite;*/
+}
+.item-wrapper{
+	background: #fff;
+	padding: 5px;
+	box-sizing: border-box;
+	overflow-y: auto;
+}
+.content-left{
+	margin-right: 10px;
+    flex: 1.43 1 58.8%;
+    display: flex;
+    flex-direction: column;
+}
+.left-item{
+    flex: auto;
+}
+.left-item:nth-of-type(1){
+	margin-bottom: 10px;
+    flex-grow: 6;
+    height: 33%;
+}
+.left-item:nth-of-type(2){
+	margin-bottom: 10px;
+    flex-grow: 7.2;
+    height: 39.6%;
+}
+.left-item:nth-of-type(3){
+	flex-grow: 5;
+	height: 27.4%;
+}
+.left-bottom-wrapper{
+	display:-webkit-flex;
+    display:-moz-flex;
+    display:flex;
+    display:-ms-flexbox;
+}
+.left-bottom-item{
+	flex: auto;
+}
+.left-bottom-item:nth-of-type(1){
+	margin-right: 10px;
+}
+.content-right{
+	flex: 1 1 41.2%;
+	/*width: 41.2%;*/
+	display: flex;
+    flex-direction: column;
+}
+.right{
+    flex: auto;
+}
+.right-item:nth-of-type(1){
+	margin-bottom: 10px;
+    flex-grow: 5;
+    height: 27.4%;
+}
+.right-item:nth-of-type(2){
+	margin-bottom: 10px;
+    flex-grow: 7.2;
+    height: 39.6%;
+}
+.right-item:nth-of-type(3){
+	flex-grow: 6;
+	height: 33%;
+}
+.index-module-wrapper{
+    padding: 20px 21px 0;
+    background: #fff;
+}
+.index-module-ul{
+	display:-webkit-flex;
+    display:-moz-flex;
+    display:flex;
+    display:-ms-flexbox;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.index-module-li{
+	width: 116px;
+    height: 116px;
+    border: 1px solid #BFBFBF;
+    box-sizing: border-box;
+    text-align: center;
+    flex: none;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+.index-title{
+	font-size: 30px;
+    color: #4A4A4A;
+    letter-spacing: -0.58px;
+    display: inline-block;
+    line-height: 30px;
+    padding: 3px 0 3px 24px;
+    position: relative;
+    margin-bottom: 15px;
+}
+.index-title:before{
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 40px;
+    background-color: #003c78;
+    border-radius: 73px;
+    left: -4px;
+    top: 0px;
+}
+.todo-title{
+    font-size: 24px;
+    color: #4A4A4A;
+    letter-spacing: -0.58px;
+    display: inline-block;
+    line-height: 32px;
+    padding: 4px 0 4px 16px;
+    position: relative;
+    margin-bottom: 15px;
+}
+.todo-title:before{
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 40px;
+    background-color: #329632;
+    border-radius: 73px;
+    left: -4px;
+    top: 0px;
+}
+.module-color-block{
+    width: 108px;
+    height: 12px;
+    display: inline-block;
+    margin-top: 6px;
+}
+.module-icon{
+	width: 36px;
+    height: 36px;
+    display: inline-block;
+    margin-top: 8px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.module-text{
+    width: 79px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    padding-top: 11px;
+}
+.index-module-li[data-href="yfxwhgd/maintenanceEntry"] .module-text{
+	padding-top: 0px;
+}
+.index-system-icon{
+	background-image: url('../../images/ic_system management.png');
+}
+.index-personnel-icon{
+	background-image: url('../../images/ic_personnel management.png');
+}
+.index-message-icon{
+	background-image: url('../../images/ic_message.png');
+}
+.index-examination-icon{
+	background-image: url('../../images/ic_examination.png');
+}
+.index-statistical-icon{
+	background-image: url('../../images/ic_statistical.png');
+}
+.index-demand-icon{
+	background-image: url('../../images/ic_demand.png');
+}
+.index-maintenance-icon{
+	background-image: url('../../images/ic_maintenance work order.png');
+}
+.index-inspection-icon{
+	background-image: url('../../images/ic_inspection.png');
+}
+.index-inventory-icon{
+	background-image: url('../../images/ic_inventory.png');
+}
+.index-quality-icon{
+	background-image: url('../../images/ic_quality.png');
+}
+.index-equipment-icon{
+	background-image: url('../../images/ic_equipment.png');
+}
+.color-gold{
+	background-color: #c8be96;
+}
+.color-red{
+	background-color: #963200;
+}
+.color-blue{
+	background-color: #003c78;
+}
+.color-green{
+	background-color: #329632;
+}
+.color-purple{
+	background-color: #bd10e0;
+}
+.color-deeppurple{
+	background-color: #9013fe;
+}
+.color-lightblue{
+	background-color: #4a90e2;
+}
+
+.todo-wrapper{
+	padding: 15px;
+}
+.todo-wrapper table.dataTable th {
+	background-image: linear-gradient(#4abc4a, #339833);
+    color: #fff;
+ }
+.btn-filter{
+    min-width: 80px;
+    background-image: url("../..//images/ic_screening.png");
+    background-repeat: no-repeat;
+    background-position: 17px center;
+    text-align: right;
+}
+.filter-condition .select,.filter-condition button{
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+.item-title{
+    height: 40px;
+    padding-left: 20px;
+    line-height: 40px;
+    font-size: 18px;
+    color: #fff;
+    font-family: pingfang_regular,tahoma, arial,"Hiragino Sans GB", "Microsoft Yahei", \5b8b\4f53, sans-serif;
+}
+.todo-wrapper table.dataTable.cell-border tbody td{
+	border-right: 1px solid #ddd;
+}
+.filter-condition{
+	margin-top: 6px;
+    margin-bottom: 0px;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../skin/css/main.css" />
+		<script src="../../lib/seajs/sea.js" type="text/javascript" charset="utf-8" id="seajsnode"></script>
+		<style type="text/css">
+			.hide {
+				display: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="content-wrapper">
+			<div id="content">
+				<input previewImg="#img1" type="file"  onchange="utilObj.previewFile(this)"><br>
+				<img id="img1" src="" height="200" width="300" alt="Image preview..."/>
+				<br/><br/>
+				<div id="tb_1">
+
+				</div>
+				<div id="tb_2" style="width: 50%;">
+					
+				</div>
+				<br />
+				<a id="btn_leftright" href="javascript:void(0);" class="sui-btn btn-xlarge btn-primary">左右结构表格</a>
+				
+				<div id="frmt" class="demo"></div>
+				<div>-----------------------------------------------------------------</div>
+				<div id="frmt2" class="demo"></div>
+				<div>
+					<div style="display: inline-block;">
+						<i class="jstree-default jstree-icon" style="background: url("./images/32px2.png") -132px -68px no-repeat;" ></i>
+						<i class="jstree-default jstree-icon" style="background: url("./images/32px2.png") -164px -68px no-repeat;" ></i>
+						<i class="jstree-default jstree-icon" style="background: url("./images/32px2.png") -196px -68px no-repeat;" ></i>
+					</div>
+				</div>
+				<!--<div id="tb_4" style="width: 400px; ">
+					
+					</div>-->
+				<!--<div id="tb_3" class="dataTables_wrapper" style="width: 30%;">
+					<table class="cell-border dataTable no-footer">
+						<thead>
+							<tr>
+								<th>asdf</th>
+								<th>asdf</th>
+								<th>asdf</th>
+							</tr>
+						</thead>
+						<tr>
+							<td>asdf</td>
+							<td>asdf</td>
+							<td>asdf</td>
+						</tr>
+						<tr>
+							<td>asdf</td>
+							<td>asdf</td>
+							<td>asdf</td>
+						</tr>
+						<tr>
+							<td>asdf</td>
+							<td>asdf</td>
+							<td>asdf</td>
+						</tr>
+					</table>
+				</div>-->
+				<div id='calendar'></div>
+			</div>
+		</div>
+		<script id="template_myModal" type="text/html">
+			<div id="myModal" tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade">	
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close">×</button>
+					<h4 id="myModalLabel" class="modal-title">Modal title</h4>
+				  </div>
+				  <div class="modal-body">
+				  	<div id="div_test1" style="width: 900px;">
+						<div id="tb_4" style="width: 42%;float: left; ">
+						</div>
+						<div style="width: 15%;float: left; height: 139px; display: table; text-align: center; ">
+							<div style="display: table-cell;vertical-align: middle;">
+								<a href="javascript:void(0);" class="movetoright sui-btn btn-small btn-primary" style="min-width: 70px;width: 70px;display: block;margin: 0 auto;">添加></a>
+								<a href="javascript:void(0);" class="movetoleft sui-btn btn-small btn-primaryRed" style="min-width: 70px;width: 70px;display: block;margin: 0 auto;margin-top: 20px;"><删除</a>
+							</div>
+						</div>
+						<div id="tb_5" style="width: 42%; float: right;">
+						</div>
+					</div>
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" data-ok="modal" class="sui-btn btn-primary btn-large">可自定ok</button>
+					<button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large">可自定dismiss</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+	    </script>
+	</body>
+
+</html>

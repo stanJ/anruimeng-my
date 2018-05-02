@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>调拨管理</title>
+		<link rel="stylesheet" type="text/css" href="../../skin/css/main.css" />
+		<script src="../../lib/seajs/sea.js" type="text/javascript" charset="utf-8" id="seajsnode"></script>
+	</head>
+
+	<body>
+		<div id="content-wrapper">
+			<div id="content">
+				<span class="arm-title-s">调拨管理</span>
+				<form class="sui-form form-horizontal mt20 clearfix">
+					<ul class="query-group clearfix">
+						<li>
+							<label class="control-label">
+							  项目名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  现场名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  调入/调出
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>							
+						<li>
+						  <div data-toggle="datepicker" class="input-daterange">
+						    <label class="control-label">
+						    	  开始时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						    <label class="control-label">
+						    	  结束时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						  </div>
+						</li>
+					</ul>
+					<ul class="query-group clearfix">
+						<li>
+							<label class="control-label">
+							  单据号
+							</label>
+							<div class="controls">
+								<input type="text" class="input-medium">
+							</div>
+						</li>
+						<li class="query-li">
+							<a class="sui-btn btn-primary" style="margin-left:52px;">查询</a>
+						</li>
+					</ul>
+					<div id="table1" class="table-wrapper" style="width: 100%;">
+					</div>
+				</form>
+
+			</div>
+		</div>
+		<script id="template1" type="text/html">
+			<div id="myModal1" tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade">	
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<!--<button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close">×</button>-->
+					<h4 id="myModalLabel" class="modal-title">Modal title111</h4>
+				  </div>
+				  <div class="modal-body">
+					<form class="sui-form scrollwidthpop sui-validate">
+						<span class="table-title-sm">要求调入物料列表</span>
+						<div class="roleAddcontent">
+							<div id="table2" class="table-wrapper" style="width: 800px;"></div>
+						</div>
+						<div class="roleAddcontent clearfix">
+							<button id="btn_add1" type="button" class="sui-btn btn-primary btn-borderadius fr">一键调入</button>
+						</div>
+						<span class="table-title-sm">要求调入批次列表</span>
+						<div class="roleAddcontent">
+							<div id="table3" class="table-wrapper" style="width: 800px;"></div>
+						</div>
+						
+				  	</form>
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" data-ok="modal"  class="sui-btn btn-primary btn-large">提交</button>
+					<button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large">取消</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</script>	
+		<script id="template2" type="text/html">
+			<div id="myModal2" tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade">	
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<!--<button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close">×</button>-->
+					<h4 id="myModalLabel" class="modal-title">Modal title111</h4>
+				  </div>
+				  <div class="modal-body">
+					<form class="sui-form scrollwidthpop sui-validate">
+						<!--<div class="roleAddcontent">
+							<label> 
+								物料大类
+							</label>
+							<span class="sui-dropdown dropdown-bordered select">
+								<span class="dropdown-inner">
+									<a id="drop9" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+										<input value="hz" name="city" type="hidden" class="">
+										<i class="caret"></i><span>请选择</span>
+									</a>
+									<ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+										</li>
+									</ul>
+								</span>
+							</span>
+							<label>
+								物料小类
+							</label>
+							<span class="sui-dropdown dropdown-bordered select">
+								<span class="dropdown-inner">
+									<a id="drop9" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+										<input value="hz" name="city" type="hidden" class="">
+										<i class="caret"></i><span>请选择</span>
+									</a>
+									<ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+										</li>
+									</ul>
+								</span>
+							</span>
+							<label>
+								物料名称
+							</label>
+							<span class="sui-dropdown dropdown-bordered select">
+								<span class="dropdown-inner">
+									<a id="drop9" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+										<input value="hz" name="city" type="hidden" class="">
+										<i class="caret"></i><span>请选择</span>
+									</a>
+									<ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+										</li>
+									</ul>
+								</span>
+							</span>
+							<label>
+								规格
+							</label>
+							<span class="sui-dropdown dropdown-bordered select">
+								<span class="dropdown-inner">
+									<a id="drop9" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+										<input value="hz" name="city" type="hidden" class="">
+										<i class="caret"></i><span>请选择</span>
+									</a>
+									<ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+										</li>
+									</ul>
+								</span>
+							</span>
+							
+						</div>-->
+						<div class="roleAddcontent arm-pr">
+							<!--<div class="clearfix">-->
+								<span class="table-title-sm">要求调出物料列表</span>
+								<div class="arm-pa">
+									<button id="btn_add2" type="button" class="sui-btn btn-primaryBlue btn-borderadius ml20">一键调出</button>
+									<button id="btn_add1" type="button" class="sui-btn btn-primary btn-borderadius ml20">添加批次</button>
+								</div>
+							<!--</div>-->
+							
+							
+							<div id="table4" class="table-wrapper"></div>
+						</div>	
+						
+						
+						<div class="roleAddcontent">
+							<span class="table-title-sm">已添加物料列表</span>
+							<div id="table5" class="table-wrapper"></div>
+						</div>
+						<div class="roleAddcontent">
+							<label>
+								总价
+							</label>
+							<input type="text" class="input-medium" />
+						</div>
+						
+				  	</form>
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" data-ok="modal"  class="sui-btn btn-primary btn-large">提交</button>
+					<button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large">取消</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</script>	
+		
+		<script id="template3" type="text/html">
+			<div id="myModal3" tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade">	
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<!--<button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close">×</button>-->
+					<h4 id="myModalLabel" class="modal-title">Modal title111</h4>
+				  </div>
+				  <div class="modal-body">
+					<form class="sui-form scrollwidthpop sui-validate label-w">
+						<div id="db-tables1" class="arm-db-tables clearfix" style="width:1750px;">
+							<div class="db-table-first">								
+							</div>
+							<div class="db-table-btn">
+								
+								<div style="display: table-cell;vertical-align: middle;">
+									<a href="javascript:void(0);" class="movetoright sui-btn btn-small btn-primary" style="min-width: 70px;width: 70px;display: block;margin: 0 auto;">添加></a>
+									<a href="javascript:void(0);" class="movetoleft sui-btn btn-small btn-primaryRed" style="min-width: 70px;width: 70px;display: block;margin: 0 auto;margin-top: 20px;"><删除</a>
+								</div>
+							</div>
+							<div class="db-table-second">
+							</div>
+						</div>
+				  	</form>
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" data-ok="modal"  class="sui-btn btn-primary btn-large">确认</button>
+					<button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large">取消</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</script>	
+		<script id="template4" type="text/html">
+			<div id="myModal4" tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade">	
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<!--<button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close">×</button>-->
+					<h4 id="myModalLabel" class="modal-title">Modal title111</h4>
+				  </div>
+				  <div class="modal-body">
+					<form class="sui-form scrollwidthpop sui-validate label-w">
+						<div class="roleAddcontent">
+							<label>
+							  单据号
+							</label>
+							<input type="text" class="input-medium" readonly />
+							<label>
+							  转出项目
+							</label>
+							<input type="text" class="input-medium" readonly />
+							<label>
+							  转出现场
+							</label>
+							<input type="text" class="input-medium" readonly />
+							<label>
+							  转出仓库
+							</label>
+							<input type="text" class="input-medium" readonly />
+							<label>
+							  转入项目
+							</label>
+							<input type="text" class="input-medium" readonly />
+							<label>
+							  转入现场
+							</label>
+							<input type="text" class="input-medium" readonly />
+						</div>
+						<div class="roleAddcontent">
+							<label>
+							  转入仓库
+							</label>
+							<input type="text" class="input-medium" readonly />
+							<label>
+							  调入/调出
+							</label>
+							<input type="text" class="input-medium" readonly />
+							<label>
+							  日期
+							</label>
+							<input type="text" class="input-medium" readonly />
+							<label>
+							  部门
+							</label>
+							<input type="text" class="input-medium" readonly />
+						</div>
+						<div class="roleAddcontent input-xl-wrapper">
+							<label>
+							  备注
+							</label>
+							<div class="controls">
+								<input type="text" class="input-xlarge input-xl" readonly>
+							</div>
+						</div>
+						<div class="roleAddcontent">
+							<div id="table6" class="table-wrapper"></div>
+						</div>
+				  	</form>
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large">关闭</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</script>	
+	
+	</body>
+
+</html>

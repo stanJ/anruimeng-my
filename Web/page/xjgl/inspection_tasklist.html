@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>巡检任务管理</title>
+		<link rel="stylesheet" type="text/css" href="../../skin/css/main.css"/><!--框架布局css-->
+		<link rel="stylesheet" type="text/css" href="../../skin/css/management.css"/><!--主页面css-->
+		<link rel="stylesheet" type="text/css" href="../../lib/switch/simple.switch.three.css">
+		<script src="../../lib/seajs/sea.js" type="text/javascript" charset="utf-8" id="seajsnode"></script>
+	</head>
+	<body>
+		<!--主体内容-->
+		<div id="content-wrapper">
+			<div id="content">
+				<!--正文开始-->
+				<div class="arm-title-s">巡检任务管理</div>
+				<div class="sui-form form-horizontal mt20">					
+				  <ul class="query-group clearfix">
+					<li>
+						<label class="control-label">
+						  项目名称
+						</label>
+						<div class="controls">
+							<span class="sui-dropdown dropdown-bordered select">
+									<span class="dropdown-inner">
+										<a id="drop4" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+											<input value="hz" name="city" type="hidden" class="">
+											<i class="caret"></i><span>请选择</span>
+										</a>
+										<ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+											<li role="presentation" class="">
+												<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+											</li>
+											<li role="presentation" class="">
+												<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+											</li>
+										</ul>
+									</span>
+							</span>
+						</div>
+					</li>
+					<li>
+						<label class="control-label">
+						  现场名称
+						</label>
+						<div class="controls">
+							<span class="sui-dropdown dropdown-bordered select">
+									<span class="dropdown-inner">
+										<a id="drop4" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+											<input value="hz" name="city" type="hidden" class="">
+											<i class="caret"></i><span>请选择</span>
+										</a>
+										<ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+											<li role="presentation" class="">
+												<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+											</li>
+											<li role="presentation" class="">
+												<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+											</li>
+										</ul>
+									</span>
+							</span>
+						</div>
+					</li>
+					<li>
+						<label class="control-label">
+						  类型
+						</label>
+						<div class="controls">
+							<span class="sui-dropdown dropdown-bordered select">
+									<span class="dropdown-inner">
+										<a id="drop4" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+											<input value="hz" name="city" type="hidden" class="">
+											<i class="caret"></i><span>请选择</span>
+										</a>
+										<ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+											<li role="presentation" class="">
+												<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+											</li>
+											<li role="presentation" class="">
+												<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+											</li>
+										</ul>
+									</span>
+							</span>
+						</div>
+					</li>
+					<li>
+						<label class="control-label">
+						  状态
+						</label>
+						<div class="controls">
+							<span class="sui-dropdown dropdown-bordered select">
+									<span class="dropdown-inner">
+										<a id="drop4" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+											<input value="hz" name="city" type="hidden" class="">
+											<i class="caret"></i><span>请选择</span>
+										</a>
+										<ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+											<li role="presentation" class="">
+												<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+											</li>
+											<li role="presentation" class="">
+												<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+											</li>
+										</ul>
+									</span>
+							</span>
+						</div>
+					</li>
+					<li>
+					  <div data-toggle="datepicker" class="input-daterange">
+					    <label class="control-label">
+					    	  开始时间</label>
+					    <div class="controls">
+					      <input type="text" class="input-medium input-date">
+					    </div>
+					    <label class="control-label">
+					    	  结束时间</label>
+					    <div class="controls">
+					      <input type="text" class="input-medium input-date">
+					    </div>
+					  </div>
+					</li>
+					<li class="query-li">
+						<a class="sui-btn btn-primary" style="margin-left:52px;">查询</a>
+					</li>
+				 </ul>
+				 <ul class="query-group clearfix align-r">	
+					<li>
+						<span>自动派单</span>
+						<input type="checkbox" class="switch-auto switch1" style="display: none;">
+					</li>
+					<li style="position: relative;">		
+						<button  id="auto-distribute" type="button" class="sui-btn btn-primary btn-borderadius mr5">一键派发</button>
+						<div class="distribute-groups-wrapper" style="display: none;">
+						  	<ul class="distribute-groups">
+						  		<li class="active">项目组</li>
+						  		<li>机电组</li>
+						  		<li>保洁组</li>
+						  		<div class="distribute-action">分派到指定组</div>
+						  	</ul>
+						</div>
+					</li>
+					<li>		
+						<button  type="button" class="sui-btn btn-primaryBlue btn-borderadius">导出巡检任务</button>
+					</li>
+					
+				  </ul>
+				  
+				  <div class="clearfix" id="table_id_tasklistTab"></div>
+			  </div>			  
+			</div>
+		</div>
+		<script id="template_mychecktaskdetail" type="text/html"><!--查看巡检任务详情-->
+			<div tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade">	
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<!--<button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close">×</button>-->
+					<h4 id="myModalLabel" class="modal-title">新增信息</h4>
+				  </div>
+				  <div class="modal-body">
+					<div class="sui-form sui-validate scrollwidthpop mt10" >
+						<!--<div class="roleAddcontent">
+							<label>
+								姓名/工号
+							</label>
+							<input type="text" value="" class="input-medium mr5" name="" >
+							<button type="button"  class="sui-btn btn-primary">搜索</button>
+						</div>-->
+						<h2 class="x_modaltitle">巡检点列表</h2>
+						<div id="table_id_taskDetailTab"></div>
+						<h2 class="x_modaltitle">暂停列表</h2>
+						<div id="table_id_taskpauseTab"></div>
+					</div>
+					
+				  </div>
+				  <div class="modal-footer">
+					<!--<button type="button" data-ok="modal" class="sui-btn btn-primary btn-large">添加</button>-->
+					<button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large">关闭</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</script>
+		<script id="template_mycheckphoto" type="text/html"><!--查看照片-->
+			<div tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade">	
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<!--<button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close">×</button>-->
+					<h4 id="myModalLabel" class="modal-title">新增信息</h4>
+				  </div>
+				  <div class="modal-body">
+					<div class="sui-form sui-validate scrollwidthpop mt10" >
+						<div class="displaytype requirementPicimg"></div>
+						<div class="displaytype requirementPicimg"></div>
+						<div class="displaytype requirementPicimg"></div>
+					</div>
+					
+				  </div>
+				  <div class="modal-footer">
+					<!--<button type="button" data-ok="modal" class="sui-btn btn-primary btn-large">添加</button>-->
+					<button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large">关闭</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</script>
+		<script id="template_mycheckinspection" type="text/html"><!--查看巡检表单-->
+			<div tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade">	
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<!--<button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close">×</button>-->
+					<h4 id="myModalLabel" class="modal-title">新增信息</h4>
+				  </div>
+				  <div class="modal-body">
+					<div class="sui-form sui-validate scrollwidthpop mt10" >
+						<div class="roleAddcontent">
+							<label>
+								巡检点名称
+							</label>
+							<input type="text" value="" class="input-medium" name="" >							
+						</div>
+						<div id="table_id_inspecionTab"></div>
+					</div>
+					
+				  </div>
+				  <div class="modal-footer">
+					<!--<button type="button" data-ok="modal" class="sui-btn btn-primary btn-large">添加</button>-->
+					<button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large">关闭</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</script>
+		<script id="template_mycheckinspectionitem" type="text/html"><!--查看巡检检查项-->
+			<div tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade">	
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<!--<button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close">×</button>-->
+					<h4 id="myModalLabel" class="modal-title">新增信息</h4>
+				  </div>
+				  <div class="modal-body">
+					<div class="sui-form sui-validate scrollwidthpop mt10" >
+						<div id="table_id_inspecionItem"></div>
+					</div>
+					
+				  </div>
+				  <div class="modal-footer">
+					<!--<button type="button" data-ok="modal" class="sui-btn btn-primary btn-large">添加</button>-->
+					<button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large">关闭</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</script>
+	</body>
+</html>
+

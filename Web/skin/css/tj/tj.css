@@ -1,0 +1,49 @@
+.tj-problem-wrapper{
+    float: left;
+    margin-left: 30px;
+    margin-top: 4px;
+}
+.onerow .btn-sm-round{
+	margin-top: -3px;
+}
+.cb-checkbox-wrapper-outer{
+    height: 40px;
+    background: #eee;
+    width: 100%;
+    font-size: 15px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-top: 1px dotted #dfdfdf;
+}
+.cb-checkbox-wrapper{
+    height: 100%;
+    display: table;
+    width: 336px;
+}
+.checkbox-pretty.cb-checkbox{
+	display: table-cell;
+    vertical-align: middle;
+}
+.arm-chart-wrapper{
+	display:-webkit-flex;
+    display:-moz-flex;
+    display:flex;
+    display:-ms-flexbox;
+	width: 100%;
+}
+.arm-chart-wrapper .tree-wrapper{
+	
+}
+.arm-chart-wrapper .tj-chart{
+	margin-left: 15px;
+    flex: auto;
+    height: initial;
+    border: 1px solid #ddd;
+    min-height: 400px;
+}
+.arm-chart-wrapper .tj-option{
+    width: 284px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}

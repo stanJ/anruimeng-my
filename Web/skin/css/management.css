@@ -1,0 +1,284 @@
+
+.sui-form input[type="text"].uploadInput{
+	width:220px;
+	margin-right:7px;
+}
+
+/*弹框样式调整*/
+.roleAddcontent{
+	font-size:12px;
+	margin-bottom:20px;
+}
+/*.roleAddcontent label{
+	display:inline-block;
+	width:70px;
+	text-align:right;
+	vertical-align:middle;
+	line-height:34px;
+	padding-right:5px;
+}*/
+
+
+.sui-dropdown.dropdown-bordered.dropdown-large > .dropdown-inner a, .sui-dropup.dropdown-bordered.dropdown-large > .dropdown-inner a{
+	font-size:12px;
+}
+
+
+.treecontainer h1{
+	margin:20px 0 15px;
+	font-size:14px;
+	font-weight:blod;
+	line-height:16px;
+}
+/*后台人员管理*/
+.staffwid label{
+	width:90px;
+	padding-right:5px;
+}
+.addUseCon li label{width:85px;}
+/*同步管理*/
+.synchrobox{
+	font-size:12px;
+	margin-bottom:20px;
+	/*overflow:hidden;*/
+}
+.synchrobox label{
+	font-size:16px;
+	line-height:26px;
+}
+/*个性化登录*/
+.personCon h2{
+    font-size: 18px;
+    margin: 0 0 15px 0;
+    line-height: 24px;
+}
+.mouldbox {
+	margin-bottom:20px;
+	height:217px;
+}
+.mouldbox .mouldelement{
+    float: left;
+    margin-right: 35px;
+    text-align: center;
+}
+.mouldbox .mouldeleLast{
+	margin-right:0;
+}
+.mouldbox .mouldelement span{
+	display:inline-block;
+	width:100%;
+	font-size:14px;
+	text-align:center;
+	padding-bottom:5px;
+}
+.mouldbox .mouldelement .mouldPic{
+	width:250px;
+	height:138px;
+	border:1px solid #BFBFBF;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+.mouldbox .mouldelement a{
+	/*display:block;*/
+	margin:20px auto 0;
+}
+.mouldbox .mouldelement.selected  .mouldPic{
+	border:2px solid #329632;
+}
+.mouldbox .mouldelement.selected a{
+	background:#8C8C8C;
+	border:1px solid #8c8c8c;
+	margin:18px auto 0;
+}
+.basicSetItem{
+	overflow:hidden;
+	margin-bottom:20px;
+}
+.itembox{
+	overflow:hidden;
+	margin-bottom:20px;
+}
+.itemTit{
+	font-size:14px;
+	border-left:6px solid #329632;
+	height:18px;
+	line-height:18px;
+	padding-left:5px;
+	margin-top:8px;
+}
+
+.logoUploadbox  .logoPicBox{
+	border:1px solid #BFBFBF;
+	height:180px;
+	width:180px;
+}
+.logoUploadbox .logoUpload{
+	width:400px;
+	margin:62px 0 0 22px;
+	position:relative;
+}
+.logoUploadbox .logoUpload p{
+	font-size:12px;
+	padding-left: 10px;
+}
+.demandOrder{
+	margin:20px 0;
+	overflow:hidden;
+}
+.demandOrder .ftit{
+	font-size:12px;
+	padding:0 10px 0 20px;
+}
+
+.demandOrder .btn-primary{
+	margin-right:10px;
+}
+.mt0{
+	margin-top:0;
+}
+.backgroundPicBox{
+	overflow:hidden;
+	margin-bottom:20px;
+}
+.pic_background{
+	background:url(../images/img_default.png) no-repeat center center;
+	background-size:cover;
+	height:302px;
+	width:302px;
+	margin:30px auto 0;
+}
+#btn_localpic{
+	position:absolute;
+	right:110px;
+	top:167px;
+	width:132px;
+	height:26px;
+	
+}
+#btn_localpic button{
+	margin:0;
+}
+.madelist{
+	position:absolute;
+	right:100px;
+	top:104px;
+	width:132px;
+}
+.madelist button{
+	margin:0 0 20px 0;
+	display:block;
+}
+
+
+/*客户反馈消息管理*/
+.pendingNews{
+	font-size:16px;
+	line-height:28px;
+}
+.pendingNews span{
+	color:#329632;
+}
+/*执行人反馈消息管理*/
+.audiobox{
+	vertical-align:top;
+	margin-top:54px;
+}
+.audiobox li{
+	background:url(../images/ic_default.png) no-repeat center center;
+	background-size:cover;
+	height:88px;
+	width:88px;
+	border:1px solid #BFBFBF;
+	margin-left:15px;
+}
+.audiobox audio{
+	margin-left:15px;
+}
+.feedline{
+	padding-bottom:20px;
+	border-bottom:1px dotted #DFDFDF;
+}
+/*日历管理*/
+.calendarbox{
+	display:inline-block;
+	border:1px solid #DDDEE1;
+	width:288px;
+	height:276px;
+}
+/*满意度管理*/
+.staffwid1 label{
+	width:80px;
+}
+.custombox h2{
+	font-size:16px;
+}
+.custombox  .picImg{
+	height:108px;
+	width:108px;
+	/*background:url(../images/ic_default.png) no-repeat center center;
+	background-size:cover;*/
+	border:1px solid #BFBFBF;
+	/*margin-right:15px;*/
+}
+.custombtn{
+	vertical-align:top;
+	margin-top:34px;
+}
+/*服务类型高级管理*/
+.servicewid label{
+	width:170px;
+}
+/*工单等级列表*/
+.tipscontent{
+	font-size:14px;
+	text-align:center;
+	margin:80px 0 0;
+}
+/*工单新增*/
+.sui-form.form-horizontal .orderWidth .control-label{
+	width:100px;
+}
+.modalPicbox{
+	display:inline-block;
+	width:140px;
+	margin-right:20px;
+	position:relative;
+}
+.modalPicbox span{
+	font-size:12px;
+	padding-bottom:5px;
+}
+.modalPicbox img{
+	display:inline-block;
+	height:140px;
+	width:140px;
+}
+.processbox .line{
+	border:2px  solid #eaeaea;
+	width:97%;
+	margin-top:6px;
+}
+.modalPicbox input.backoricon[type="file"]{
+	width:140px;
+	height:84px;
+	top:24px;
+}
+/*.increasedTips{
+	font-size:12px;
+	padding:10px 0 0 127px;
+	color:red;
+}*/
+/*审核工单详情*/
+.sui-form.form-horizontal .orderDetailwid .control-label{
+	width:120px;
+}
+/*需求工单详情*/
+.requirementPicimg{
+	height:140px;
+	width:140px;
+	background:url(../images/img_default.png) no-repeat center center;
+	background-size:cover;
+	border:1px solid #BFBFBF;
+	margin-right:15px;
+}

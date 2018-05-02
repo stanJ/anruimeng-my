@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>分析任务</title>
+		<link rel="stylesheet" type="text/css" href="../../skin/css/main.css" />
+		<script src="../../lib/seajs/sea.js" type="text/javascript" charset="utf-8" id="seajsnode"></script>
+	</head>
+
+	<body>
+		<div id="content-wrapper">
+			<div id="content">
+				<span class="arm-title-s">分析任务</span>
+				<form class="sui-form form-horizontal mt20 clearfix">
+					
+					<div class="arm-detail-wrapper">
+						<div class="arm-nav-wrapper">
+							<span class="arm-nav-text" data-href="analyse_task">分析任务</span>
+							<i class="sui-icon icon-arrow-right arm-nav-arrow"></i>
+							<span class="arm-nav-text">分析任务详情</span>
+						</div>
+						<div class="arm-title-first has-back-icon" data-href="analyse_task"><i class="sui-icon icon-pc-chevron-right"></i>
+							<div class="arm-title-text">分析任务详情</div>
+							<div class="arm-back-wrapper">
+								
+							</div>
+						</div>
+					</div>
+					<span class="table-title-md">分析处理</span>
+					<div id="table1" class="table-wrapper" style="width: 100%;">
+					</div>
+					<div id="table2" class="table-wrapper" style="width: 100%;">
+					</div>
+					<div id="tree1" style="margin-bottom: 30px;"></div>
+					<ul class="query-group clearfix" style="padding-left: 20px;">
+						<li>
+							<button id="btn_add_1" type="button" class="sui-btn btn-primary btn-bordered">为选中项添加子项</button>
+						</li>
+						<li>
+							<button id="btn_modify_1" type="button" class="sui-btn btn-primary btn-bordered">编辑分析项</button>
+						</li>
+						<li>
+							<button id="btn_delete_1" type="button" class="sui-btn btn-primaryRed btn-bordered">删除分析项</button>
+						</li>
+					</ul>
+
+					<ul class="query-group clearfix">
+						<li class="input-xl-wrapper">
+							<label class="control-label v-top" style="min-width: 27px;">
+							  结论
+							</label>
+							<div class="controls">
+								<textarea class="input-xlarge input-xl"></textarea>
+							</div>
+						</li>
+					</ul>
+					<span class="table-title-md">跟进措施执行人</span>
+					<ul class="query-group fr">
+						<li>
+							<button id="btn_add1-1" type="button" class="sui-btn btn-primary btn-borderadius">添加</button>
+						</li>
+						<li>
+							<button id="btn_add1-2" type="button" class="sui-btn btn-primaryRed btn-borderadius">删除选中项</button>
+						</li>
+					</ul>
+					<div id="table3" class="table-wrapper" style="width: 100%;">
+					</div>
+					<div class="arm-submit-group">
+						<button type="button" class="sui-btn btn-primary">提交</button>
+						<button type="button" class="sui-btn">取消</button>
+					</div>
+				</form>
+
+			</div>
+		</div>
+		<script id="template_orderdetail" type="text/html">
+			<div id="myModal1" tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade">	
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<!--<button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close">×</button>-->
+					<h4 id="myModalLabel" class="modal-title">Modal title111</h4>
+				  </div>
+				  <div class="modal-body">
+					<form class="sui-form scrollwidthpop sui-validate" style="width: 382px;">
+						<span class="table-title-sm">工单描述</span>
+						<div class="roleAddcontent">
+							
+							<textarea class="input-xlarge arm-textarea-sm"></textarea>
+						</div>
+						<div class="roleAddcontent arm-img-wrapper-lg">
+							<img src="../../skin/images/ic_default.png" class="arm-img-default">
+							<img src="../../skin/images/ic_default.png" class="arm-img-default">
+							<img src="../../skin/images/ic_default.png" class="arm-img-default">
+						</div>
+						<span class="table-title-sm">处理结果描述</span>
+						<div class="roleAddcontent">
+							
+							<textarea class="input-xlarge arm-textarea-sm"></textarea>
+						</div>
+				  	</form>
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large">关闭</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</script>
+		
+		<script id="template2" type="text/html">
+			<div id="myModal2" tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade">	
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<!--<button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close">×</button>-->
+					<h4 id="myModalLabel" class="modal-title">Modal title111</h4>
+				  </div>
+				  <div class="modal-body">
+					<form class="sui-form scrollwidthpop sui-validate" style="width: 450px;">
+						<div class="arm-block arm-label-lg">
+							
+						
+						<div class="roleAddcontent">
+							<label>跟进措施执行人</label>
+							<span class="sui-dropdown dropdown-bordered select">
+								<span class="dropdown-inner">
+									<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+										<input value="" name="city" type="hidden" class="">
+										<i class="caret"></i><span>请选择</span>
+									</a>
+									<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+										</li>
+									</ul>
+								</span>
+							</span>
+						</div>
+						<div class="roleAddcontent">
+							<label>跟进措施要求完成时间</label>
+							<input type="text" class="input-medium" />
+						</div>
+						<div class="roleAddcontent input-xl-wrapper">
+							<label style="min-width: 118px;">解决方案描述</label>
+							<div class="controls">
+								<!--<input type="text" class="input-xlarge input-xl">-->
+								<textarea class="input-xlarge input-xl"></textarea>
+							</div>
+							
+						</div>
+						</div>
+				  	</form>
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" data-dismiss="modal" class="sui-btn btn-primary btn-large">新增</button>
+					<button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large">取消</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</script>
+		<script id="template3" type="text/html">
+			<div id="myModal3" tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade">	
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<!--<button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close">×</button>-->
+					<h4 id="myModalLabel" class="modal-title">Modal title111</h4>
+				  </div>
+				  <div class="modal-body">
+					<form class="sui-form scrollwidthpop sui-validate">	
+						<div class="roleAddcontent">
+							<label>类型</label>
+							<span class="sui-dropdown dropdown-bordered select">
+								<span class="dropdown-inner">
+									<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+										<input value="" name="city" type="hidden" class="">
+										<i class="caret"></i><span>请选择</span>
+									</a>
+									<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+										</li>
+									</ul>
+								</span>
+							</span>
+							<label>原因</label>
+							<span class="sui-dropdown dropdown-bordered select">
+								<span class="dropdown-inner">
+									<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+										<input value="" name="city" type="hidden" class="">
+										<i class="caret"></i><span>请选择</span>
+									</a>
+									<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+										</li>
+									</ul>
+								</span>
+							</span>
+						</div>
+						<div class="roleAddcontent">
+							<label>其他原因</label>
+							<input type="text" class="input-medium" />
+							<label>备注</label>
+							<input type="text" class="input-medium" />
+						</div>
+				  	</form>
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" data-dismiss="modal" class="sui-btn btn-primary btn-large">保存</button>
+					<button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large">取消</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</script>
+	</body>
+
+</html>

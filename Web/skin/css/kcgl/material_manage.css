@@ -1,0 +1,10 @@
+.sui-form  input[type="file"].input-import-wuliao{
+	display: inline-block;
+	width: 132px;
+	height: 34px;
+	position: absolute;
+	left: 385px;
+	top: 9px;
+	opacity: 0;
+	cursor: pointer;
+}

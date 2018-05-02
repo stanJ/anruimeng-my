@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登陆</title>
+		<link rel="stylesheet" type="text/css" href="../../lib/sui/sui.css"/>
+		<link rel="stylesheet" type="text/css" href="../../skin/css/login/login.css"/>
+		<script src="../../lib/jquery/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../lib/sui/sui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/frame/util.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="wrapper tp-green">
+			<div class="info-wrapper">
+				<script type="text/javascript">
+					var tp = utilObj.getUrlParam('tp');
+					if(tp=='white'){
+						$(".wrapper").removeClass("tp-green").addClass("tp-white");
+					}else if(tp=='black'){
+						$(".wrapper").removeClass("tp-green").addClass("tp-black");
+					}else{
+						//
+					}
+				</script>
+				<div class="info-logo">
+					<div class="logo-inner"></div>
+				</div>
+				<div class="info-name">艾富玛</div>
+				<div class="info-describe">设施管理平台</div>
+			</div>
+			<div class="login-wrapper">
+				<div class="logo-s"></div>
+				<form class="sui-form fs16">
+				  <div class="control-group login-input">
+				  	<label class="control-label"></label>
+				  	<!--<div class="add-on"></div>-->
+					<div class="input-wrapper login-account">
+						<input type="text" placeholder="用户名" class="fs16">
+					</div>
+				    	
+				  </div>
+				  <div class="control-group login-input">
+				  	<label class="control-label"></label>
+				  	<!--<div class="add-on"></div>-->
+				  	<div class="input-wrapper login-pw">
+				    		<input type="text" placeholder="密码" class="fs16">
+				    	</div>
+				  </div>
+				  <div class="control-group login-cb">
+				    <label class="control-label"></label>
+				    <div class="controls">
+				      <label data-toggle="checkbox" class="checkbox-pretty inline">
+				        <input type="checkbox" name="remember-me"><span>自动登录</span>
+				        <a href="javascript:void(0)" class="fr login-fpw">忘记密码</a>
+				      </label>
+				    </div>
+				  </div>
+				  <div class="control-group">
+				    <label class="control-label"></label>
+				    <div class="controls">
+				      <button type="submit" class="sui-btn btn-primary login-btn">登陆</button>
+				    </div>
+				  </div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

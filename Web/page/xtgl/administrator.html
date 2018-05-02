@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>超级管理员管理</title>
+		<link rel="stylesheet" type="text/css" href="../../skin/css/main.css"/><!--框架布局css-->
+		<link rel="stylesheet" type="text/css" href="../../skin/css/management.css"/><!--主页面css-->	
+		<script src="../../lib/seajs/sea.js" type="text/javascript" charset="utf-8" id="seajsnode"></script>
+	</head>
+	<body>
+		<!--主体内容-->
+		<div id="content-wrapper">
+			<div id="content">
+				<!--正文开始-->	
+			  <div class="arm-title-s">超级管理员管理</div>
+			  <div class="sui-form form-horizontal mt20">
+				  <ul class="query-group clearfix align-r">
+					<li>
+						<button id="btn_add" type="button" class="sui-btn btn-primary btn-borderadius">新增</button>
+					</li>
+					<li>
+						<button id="btn_delete" type="button" class="sui-btn btn-borderadius btn-primaryRed">删除选中项</button>
+					</li>
+				  </ul>
+				  <div class="clear"></div>
+				  <div id="table_id_administrator"></div>
+			  </div>		  
+			</div>
+		</div>
+		
+		<script id="template_addUserModal" type="text/html">
+			<div id="myModal1" tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade">	
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<!--<button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close">×</button>-->
+					<h4 id="myModalLabel" class="modal-title">Modal title111</h4>
+				  </div>
+				  <div class="modal-body">
+					<div class="sui-form scrollwidthpop sui-validate">
+						<div class="roleAddcontent">
+							<label>
+							  项目名称
+							</label>
+							<span class="sui-dropdown dropdown-bordered select">
+								<span class="dropdown-inner">
+									<a id="drop8" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+										<input value="hz" name="city" type="hidden" class="">
+										<i class="caret"></i><span>选择项目名称</span>
+									</a>
+									<ul id="menu8" role="menu" aria-labelledby="drop8" class="sui-dropdown-menu">
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+										</li>
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+										</li>
+									</ul>
+								</span>
+							</span>
+							<label>
+							  现场名称
+							</label>
+							<span class="sui-dropdown dropdown-bordered select">
+								<span class="dropdown-inner">
+									<a id="drop9" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+										<input value="hz" name="city" type="hidden" class="">
+										<i class="caret"></i><span>选择现场名称</span>
+									</a>
+									<ul id="menu9" role="menu" aria-labelledby="drop9" class="sui-dropdown-menu">
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+										</li>
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+										</li>
+									</ul>
+								</span>
+							</span>
+							<label>
+							 类型
+							</label>
+							<span class="sui-dropdown dropdown-bordered select">
+								<span class="dropdown-inner">
+									<a id="drop10" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+										<input value="hz" name="city" type="hidden" class="">
+										<i class="caret"></i><span>选择类型</span>
+									</a>
+									<ul id="menu10" role="menu" aria-labelledby="drop10" class="sui-dropdown-menu">
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+										</li>
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+										</li>
+									</ul>
+								</span>
+							</span>
+						</div>
+						<div class="roleAddcontent">
+							<label>
+							人员名称
+							</label>
+							<input type="text" class="input-medium">
+							<label>
+							密码
+							</label>
+							<input type="text" class="input-medium">
+							<label>
+							登录名
+							</label>
+							<input type="text" class="input-medium">
+							<label>
+							手机
+							</label>
+							<input type="text" class="input-medium">
+						</div>
+						<div class="roleAddcontent">
+							<label>
+							邮箱
+							</label>
+							<input type="text" class="input-medium">
+							<label>
+							部门
+							</label>
+							<input type="text" class="input-medium">
+							<label>
+							公司
+							</label>
+							<input type="text" class="input-medium">
+						</div>
+						<h2 class="x_modaltitle">选择用户添加</h2>
+						<div class="roleAddcontent">
+							<label>
+							  系统
+							</label>
+							<span class="sui-dropdown dropdown-bordered select">
+								<span class="dropdown-inner">
+									<a id="drop7" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+										<input value="hz" name="city" type="hidden" class="">
+										<i class="caret"></i><span>选择类型</span>
+									</a>
+									<ul id="menu7" role="menu" aria-labelledby="drop7" class="sui-dropdown-menu">
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+										</li>
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+										</li>
+									</ul>
+								</span>
+							</span>
+							<label>
+							  项目名称
+							</label>
+							<span class="sui-dropdown dropdown-bordered select">
+								<span class="dropdown-inner">
+									<a id="drop15" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+										<input value="hz" name="city" type="hidden" class="">
+										<i class="caret"></i><span>选择项目名称</span>
+									</a>
+									<ul id="menu15" role="menu" aria-labelledby="drop15" class="sui-dropdown-menu">
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+										</li>
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+										</li>
+									</ul>
+								</span>
+							</span>
+							<label>
+							  现场名称
+							</label>
+							<span class="sui-dropdown dropdown-bordered select">
+								<span class="dropdown-inner">
+									<a id="drop16" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+										<input value="hz" name="city" type="hidden" class="">
+										<i class="caret"></i><span>选择现场名称</span>
+									</a>
+									<ul id="menu16" role="menu" aria-labelledby="drop16" class="sui-dropdown-menu">
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+										</li>
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+										</li>
+									</ul>
+								</span>
+							</span>
+							<label>
+							  后台角色
+							</label>
+							<span class="sui-dropdown dropdown-bordered select">
+								<span class="dropdown-inner">
+									<a id="drop17" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+										<input value="hz" name="city" type="hidden" class="">
+										<i class="caret"></i><span>选择后台角色</span>
+									</a>
+									<ul id="menu17" role="menu" aria-labelledby="drop17" class="sui-dropdown-menu">
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+										</li>
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+										</li>
+									</ul>
+								</span>
+							</span>
+						</div>
+						<div class="roleAddcontent">
+							<label>
+							  类型
+							</label>
+							<span class="sui-dropdown dropdown-bordered select">
+								<span class="dropdown-inner">
+									<a id="drop9" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+										<input value="hz" name="city" type="hidden" class="">
+										<i class="caret"></i><span>选择类型</span>
+									</a>
+									<ul id="menu9" role="menu" aria-labelledby="drop9" class="sui-dropdown-menu">
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+										</li>
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+										</li>
+									</ul>
+								</span>
+							</span>
+							
+						</div>
+						<div class="roleAddcontent normal-wrap">
+							<label style="width: 100px;">
+							  员工姓名或工号
+							</label>
+							<input type="text" value="" class="input-medium input-lg"  />
+							<a class="sui-btn btn-primary fr" style="margin-left:52px;">查询</a>
+						</div>
+						<div class="arm-normal-title">人员列表</div>
+						<div id="table_id_addadministrator"></div>
+				  	</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" data-ok="modal"  class="sui-btn btn-primary btn-large">新增</button>
+					<button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large">关闭</button>
+				</div>
+				</div>
+			  </div>
+			</div>
+		</script>
+		<script id="template_modifyUserModal" type="text/html">
+			<div id="myModal1" tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade">	
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<!--<button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close">×</button>-->
+					<h4 id="myModalLabel" class="modal-title">Modal title111</h4>
+				  </div>
+				  <div class="modal-body">
+					<div class="sui-form scrollwidthpop sui-validate">
+						<div class="roleAddcontent">
+							<label>
+							  项目名称
+							</label>
+							<span class="sui-dropdown dropdown-bordered select">
+								<span class="dropdown-inner">
+									<a id="drop8" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+										<input value="hz" name="city" type="hidden" class="">
+										<i class="caret"></i><span>选择项目名称</span>
+									</a>
+									<ul id="menu8" role="menu" aria-labelledby="drop8" class="sui-dropdown-menu">
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+										</li>
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+										</li>
+									</ul>
+								</span>
+							</span>
+							<label>
+							  现场名称
+							</label>
+							<span class="sui-dropdown dropdown-bordered select">
+								<span class="dropdown-inner">
+									<a id="drop9" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+										<input value="hz" name="city" type="hidden" class="">
+										<i class="caret"></i><span>选择现场名称</span>
+									</a>
+									<ul id="menu9" role="menu" aria-labelledby="drop9" class="sui-dropdown-menu">
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+										</li>
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+										</li>
+									</ul>
+								</span>
+							</span>
+							<label>
+							 类型
+							</label>
+							<span class="sui-dropdown dropdown-bordered select">
+								<span class="dropdown-inner">
+									<a id="drop10" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+										<input value="hz" name="city" type="hidden" class="">
+										<i class="caret"></i><span>选择类型</span>
+									</a>
+									<ul id="menu10" role="menu" aria-labelledby="drop10" class="sui-dropdown-menu">
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+										</li>
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+										</li>
+									</ul>
+								</span>
+							</span>
+						</div>
+						<div class="roleAddcontent">
+							<label>
+							人员名称
+							</label>
+							<input type="text" class="input-medium">
+							<label>
+							密码
+							</label>
+							<input type="text" class="input-medium">
+							<label>
+							登录名
+							</label>
+							<input type="text" class="input-medium">
+							<label>
+							手机
+							</label>
+							<input type="text" class="input-medium">
+						</div>
+						<div class="roleAddcontent">
+							<label>
+							邮箱
+							</label>
+							<input type="text" class="input-medium">
+							<label>
+							部门
+							</label>
+							<input type="text" class="input-medium">
+							<label>
+							公司
+							</label>
+							<input type="text" class="input-medium">
+						</div>
+						<h2 class="x_modaltitle">选择用户添加</h2>
+						<div class="roleAddcontent">
+							<label>
+							  系统
+							</label>
+							<span class="sui-dropdown dropdown-bordered select">
+								<span class="dropdown-inner">
+									<a id="drop7" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+										<input value="hz" name="city" type="hidden" class="">
+										<i class="caret"></i><span>选择类型</span>
+									</a>
+									<ul id="menu7" role="menu" aria-labelledby="drop7" class="sui-dropdown-menu">
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+										</li>
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+										</li>
+									</ul>
+								</span>
+							</span>
+							<label>
+							  项目名称
+							</label>
+							<span class="sui-dropdown dropdown-bordered select">
+								<span class="dropdown-inner">
+									<a id="drop15" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+										<input value="hz" name="city" type="hidden" class="">
+										<i class="caret"></i><span>选择项目名称</span>
+									</a>
+									<ul id="menu15" role="menu" aria-labelledby="drop15" class="sui-dropdown-menu">
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+										</li>
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+										</li>
+									</ul>
+								</span>
+							</span>
+							<label>
+							  现场名称
+							</label>
+							<span class="sui-dropdown dropdown-bordered select">
+								<span class="dropdown-inner">
+									<a id="drop16" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+										<input value="hz" name="city" type="hidden" class="">
+										<i class="caret"></i><span>选择现场名称</span>
+									</a>
+									<ul id="menu16" role="menu" aria-labelledby="drop16" class="sui-dropdown-menu">
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+										</li>
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+										</li>
+									</ul>
+								</span>
+							</span>
+							<label>
+							  后台角色
+							</label>
+							<span class="sui-dropdown dropdown-bordered select">
+								<span class="dropdown-inner">
+									<a id="drop17" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+										<input value="hz" name="city" type="hidden" class="">
+										<i class="caret"></i><span>选择后台角色</span>
+									</a>
+									<ul id="menu17" role="menu" aria-labelledby="drop17" class="sui-dropdown-menu">
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+										</li>
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+										</li>
+									</ul>
+								</span>
+							</span>
+						</div>
+						<div class="roleAddcontent">
+							<label>
+							  类型
+							</label>
+							<span class="sui-dropdown dropdown-bordered select">
+								<span class="dropdown-inner">
+									<a id="drop9" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+										<input value="hz" name="city" type="hidden" class="">
+										<i class="caret"></i><span>选择类型</span>
+									</a>
+									<ul id="menu9" role="menu" aria-labelledby="drop9" class="sui-dropdown-menu">
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+										</li>
+										<li role="presentation" class="">
+											<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+										</li>
+									</ul>
+								</span>
+							</span>
+							
+						</div>
+						<div class="roleAddcontent normal-wrap">
+							<label style="width: 100px;">
+							  员工姓名或工号
+							</label>
+							<input type="text" value="" class="input-medium input-lg"  />
+							<a class="sui-btn btn-primary fr" style="margin-left:52px;">查询</a>
+						</div>
+						<div class="arm-normal-title">人员列表</div>
+						<div id="table_id_addadministrator"></div>
+				  	</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" data-ok="modal"  class="sui-btn btn-primary btn-large">保存</button>
+					<button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large">关闭</button>
+				</div>
+				</div>
+			  </div>
+			</div>
+		</script>
+		
+		<script id="template_userDetail" type="text/html">
+			<div id="myModal1" tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade">	
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<!--<button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close">×</button>-->
+					<h4 id="myModalLabel" class="modal-title">Modal title111</h4>
+				  </div>
+				  <div class="modal-body">
+					<div class="sui-form scrollwidthpop sui-validate">
+					<div class="roleAddcontent">
+						<label>
+						  人员名称
+						</label>
+						<input type="text" value="" class="input-medium" />
+						<label>
+						  密码
+						</label>
+						<input type="text" value="" class="input-medium" />
+						<label>
+						  登录名
+						</label>
+						<input type="text" value="" class="input-medium" />
+						<label>
+						  手机
+						</label>
+						<input type="text" value="" class="input-medium" />
+					</div>
+					<div class="roleAddcontent">
+						<label>
+						  邮箱
+						</label>
+						<input type="text" value="" class="input-medium" />
+						<label>
+						  部门
+						</label>
+						<input type="text" value="" class="input-medium" />
+						<label>
+						  公司名
+						</label>
+						<input type="text" value="" class="input-medium" />
+						<label>
+						  类型
+						</label>
+						<span class="sui-dropdown dropdown-bordered select">
+							<span class="dropdown-inner">
+								<a id="drop7" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+									<input value="hz" name="city" type="hidden" class="">
+									<i class="caret"></i><span>选择类型</span>
+								</a>
+								<ul id="menu7" role="menu" aria-labelledby="drop7" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+									</li>
+								</ul>
+							</span>
+						</span>
+					</div>
+					<div class="roleAddcontent">
+						<label>
+						  项目名称
+						</label>
+						<span class="sui-dropdown dropdown-bordered select">
+							<span class="dropdown-inner">
+								<a id="drop8" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+									<input value="hz" name="city" type="hidden" class="">
+									<i class="caret"></i><span>选择项目名称</span>
+								</a>
+								<ul id="menu8" role="menu" aria-labelledby="drop8" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+									</li>
+								</ul>
+							</span>
+						</span>
+						<label>
+						  现场名称
+						</label>
+						<span class="sui-dropdown dropdown-bordered select">
+							<span class="dropdown-inner">
+								<a id="drop9" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+									<input value="hz" name="city" type="hidden" class="">
+									<i class="caret"></i><span>选择现场名称</span>
+								</a>
+								<ul id="menu9" role="menu" aria-labelledby="drop9" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+									</li>
+								</ul>
+							</span>
+						</span>
+					</div>
+				  </div>
+				  </div>
+				  <div class="modal-footer">
+					<!--<button type="button" data-ok="modal"  class="sui-btn btn-primary btn-large">新增</button>-->
+					<button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large">关闭</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</script>	
+	</body>
+</html>
+

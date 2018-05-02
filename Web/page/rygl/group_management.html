@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>分组管理</title>
+		<link rel="stylesheet" type="text/css" href="../../skin/css/main.css"/><!--框架布局css-->
+		<link rel="stylesheet" type="text/css" href="../../skin/css/management.css"/><!--主页面css-->
+		<script src="../../lib/seajs/sea.js" type="text/javascript" charset="utf-8" id="seajsnode"></script>
+	</head>
+	<body>
+		<!--主体内容-->
+		<div id="content-wrapper">
+			<div id="content">
+				<!--正文开始-->
+				<div class="arm-title-s">分组管理</div>
+				<div class="sui-form form-horizontal sui-validate mt20">
+					<ul class="query-group clearfix">
+						<li>
+							<label class="control-label">
+							  项目名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop4" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="hz" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+											</a>
+											<ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+												<li role="presentation" class="">
+													<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+												</li>
+												<li role="presentation" class="">
+													<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+												</li>
+											</ul>
+										</span>
+								</span>
+							</div>
+						</li>						
+						<li>
+							<label class="control-label">
+							  现场名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop4" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="hz" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+											</a>
+											<ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+												<li role="presentation" class="">
+													<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+												</li>
+												<li role="presentation" class="">
+													<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+												</li>
+											</ul>
+										</span>
+								</span>
+							</div>
+						</li>
+						<li class="query-li">
+							<button type="button" class="sui-btn btn-primary"  style="margin-left:22px;">查询</button>
+						</li>
+					</ul>
+					<ul class="query-group clearfix align-r">
+						<li>
+							<button id="btn_add" type="button" class="sui-btn btn-primary btn-borderadius mr5">新增</button>
+							<button id="btn_delete" type="button" class="sui-btn btn-primaryRed btn-borderadius">删除选中项</button>
+						</li>
+				  </ul>
+				  <div class="clearfix" id="table_id_grouplist"></div>
+			  </div>
+			  
+			  
+			</div>
+		</div>
+		<script id="template_addGropModel" type="text/html">
+			<div tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade">	
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<!--<button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close">×</button>-->
+					<h4 id="myModalLabel" class="modal-title">考勤日历</h4>
+				  </div>
+				  <div class="modal-body">
+					<div class="sui-form sui-validate scrollwidthpop mt10">					
+						<div class="roleAddcontent">
+							<label>
+							  分组名称
+							</label>
+							<input type="text" value="" class="input-medium" name="" >
+							<label>
+							  转派审批人
+							</label>
+							<span class="sui-dropdown dropdown-bordered select">
+								<span class="dropdown-inner">
+									<a id="drop4" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+									<input value="" name="city" type="hidden">
+									<i class="caret"></i><span>请选择</span>
+									</a>
+								  <ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="sb">圣彼得堡</a></li>
+									<li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="hz">杭州</a></li>
+								  </ul>
+								</span>
+							</span>			
+						</div>
+							
+					</div>
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" data-ok="modal" class="sui-btn btn-primary btn-large">提交</button>
+					<button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large">取消</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</script>
+		<script id="template_GropUserInfo" type="text/html"><!--分组人员信息-->
+			<div tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade">	
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<!--<button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close">×</button>-->
+					<h4 id="myModalLabel" class="modal-title">考勤日历</h4>
+				  </div>
+				  <div class="modal-body">
+					<div class="sui-form sui-validate scrollwidthpop mt10">					
+						<div id="div_gropUserInfo" style="width:1111px;" class="arm-db-tables">
+							<div id="tb_userlist1" class="db-table-first">								
+							</div>
+							<div class="db-table-btn">
+								
+								<div style="display: table-cell;vertical-align: middle;">
+									<a href="javascript:void(0);" class="movetoright sui-btn btn-small btn-primary" style="min-width: 70px;width: 70px;display: block;margin: 0 auto;">添加></a>
+									<a href="javascript:void(0);" class="movetoleft sui-btn btn-small btn-primaryRed" style="min-width: 70px;width: 70px;display: block;margin: 0 auto;margin-top: 20px;"><删除</a>
+								</div>
+							</div>
+							<div id="tb_userlist2" class="db-table-second">
+							</div>
+						</div>
+							
+					</div>
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" data-ok="modal" class="sui-btn btn-primary btn-large">提交</button>
+					<button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large">取消</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</script>
+	</body>
+</html>
+

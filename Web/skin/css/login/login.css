@@ -1,0 +1,208 @@
+body{
+	
+}
+.login-wrapper{
+	width: 380px;
+    height: 400px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 190px;
+    padding: 27px 22px 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+.logo-s{
+	height: 78px;
+	margin-bottom: 29px;
+	background: url(../../images/login_logo_large.png) no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+.sui-form .control-group.login-input{
+	position: relative;
+	width: 100%;
+    margin-bottom: 12px;
+    height: 55px;
+	
+}
+.input-wrapper{
+    width: 100%;
+    box-sizing: border-box;
+}
+.sui-form input[type="text"]{
+	width: 100%;
+    box-sizing: border-box;
+    height: 55px;
+    padding-left: 66px;
+}
+.input-wrapper:before{
+	position: absolute;
+    content: '';
+    width: 54px;
+    height: 53px;
+    background-color: #f6f6f6;
+    left: 1px;
+    top: 1px;
+    background-position: center;
+}
+.input-wrapper.login-account:before{
+    background-image: url(../../images/ic_user_account.png);
+    background-repeat: no-repeat;
+}
+.input-wrapper.login-pw:before{
+     background-image: url(../../images/ic_password.png);
+    background-repeat: no-repeat;
+}
+.fs16{
+	font-size: 16px;
+}
+.fr{
+	float: right;
+}
+.login-fpw{
+	color: #0c5097;
+}
+a:hover, a:focus {
+    color: #2377ce;
+    text-decoration: underline;
+}
+.sui-form .control-group.login-cb{
+	margin-top: 7px;
+	margin-bottom: 19px;
+}
+.login-btn{
+	width: 100%;
+    height: 58px;
+    background-color: #0c5097;
+}
+.checkbox-pretty:hover span:before, .radio-pretty:hover span:before {
+    /* color: #4cb9fc; */
+    color: #0c5097;
+}
+.checkbox-pretty.checked > span:before, .radio-pretty.checked > span:before {
+    content: "\e607";
+    /* color: #28a3ef; */
+    color: #0c5097;
+}
+.btn-primary:hover, .btn-primary:focus {
+    color: #ffffff;
+    background-color: #2377ce;
+    border: 1px solid #2377ce;
+}
+.wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.info-wrapper{
+	position: absolute;
+}
+.info-logo{
+	
+}
+.info-name{
+	
+}
+.info-describe{
+	
+}
+.tp-black{
+	background: url("../../images/bg_login_2.png") no-repeat;
+}
+.tp-black .info-wrapper{
+	top: 50px;
+}
+.tp-black .info-logo{
+	width: 277px;
+    height: 88px;
+    background-color: #fff;
+    border-radius: 0 19px 19px 0;
+    float: left;
+    margin-right: 15px;
+    padding: 8px 0;
+    box-sizing: border-box;
+}
+.tp-black .info-logo>.logo-inner{
+	width: 100%;
+    height: 100%;
+    background-image: url(../../images/login_logo_large.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.tp-black .info-name{
+	color: #fff;
+    font-size: 62px;
+    line-height: 88px;
+    float: left;
+    margin-right: 26px;
+}
+.tp-black .info-describe{
+	color: #fff;
+    font-size: 23px;
+    float: left;
+    line-height: 88px;
+    letter-spacing: 12px;
+}
+.tp-green{
+	background: url("../../images/bg_login_1.png") no-repeat;
+}
+.tp-green .info-wrapper{
+	top: 46px;
+	left: 80px;
+}
+.tp-green .info-logo{
+	width: 363px;
+	height: 144px;
+	background: #fff;
+	margin-bottom: 40px;
+	background: url(../../images/login_logo_large.png) no-repeat;
+}
+.tp-green .info-name{
+	margin-left: 78px;
+	font-size: 68px;
+    line-height: 67px;
+    margin-bottom: 26px;
+    color: #0c5097;
+}
+.tp-green .info-describe{
+	margin-left: 15px;
+	color: #0c5097;
+    font-size: 32px;
+    line-height: 31px;
+    letter-spacing: 24px;
+}
+.tp-white{
+	background: url("../../images/bg_login_3.png") no-repeat;
+}
+.tp-white .info-wrapper{
+	top: 35px;
+    left: 58px;
+}
+.tp-white .info-logo{
+	width: 265px;
+    height: 105px;
+    background: #fff;
+    margin-bottom: 95px;
+    background-image: url(../../images/login_logo_large.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.tp-white .info-name{
+	color: #fff;
+    font-size: 68px;
+    line-height: 67px;
+    margin-bottom: 26px;
+}
+.tp-white .info-describe{
+    color: #fff;
+    font-size: 32px;
+    line-height: 31px;
+    letter-spacing: 24px;
+}
+
+

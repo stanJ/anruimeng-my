@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>设备管理</title>
+		<link rel="stylesheet" type="text/css" href="../../skin/css/main.css"/><!--框架布局css-->
+		<link rel="stylesheet" type="text/css" href="../../skin/css/management.css"/><!--主页面css-->
+		<script src="../../lib/seajs/sea.js" type="text/javascript" charset="utf-8" id="seajsnode"></script>
+	</head>
+	<body>
+		<!--主体内容-->
+		<div id="content-wrapper">
+			<div id="content">
+				<!--正文开始-->
+				<div class="arm-title-s">设备管理</div>
+				<div class="arm-nav-wrapper">
+					<span class="arm-nav-text" data-href="device_management">设备管理</span>
+					<i class="sui-icon icon-arrow-right arm-nav-arrow"></i>
+					<span class="arm-nav-text nav-text-second"></span>
+				</div>
+				<div class="arm-title-first has-back-icon" data-href="device_management"><i class="sui-icon icon-pc-chevron-right"></i>
+					<div class="arm-title-text"></div>
+					<div class="arm-back-wrapper">
+						
+					</div>
+				</div>
+				<div class="sui-form form-horizontal mt20">
+					<ul class="query-group orderWidth clearfix arm-label-lg">
+						<li>
+							<label class="control-label">
+							  系统名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+									<span class="dropdown-inner">
+										<a id="drop4" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+											<input value="hz" name="city" type="hidden" class="">
+											<i class="caret"></i><span>请选择</span>
+										</a>
+										<ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+											<li role="presentation" class="">
+												<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+											</li>
+											<li role="presentation" class="">
+												<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+											</li>
+										</ul>
+									</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  设备
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+									<span class="dropdown-inner">
+										<a id="drop4" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+											<input value="hz" name="city" type="hidden" class="">
+											<i class="caret"></i><span>请选择</span>
+										</a>
+										<ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+											<li role="presentation" class="">
+												<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+											</li>
+											<li role="presentation" class="">
+												<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+											</li>
+										</ul>
+									</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  设备类型
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+									<span class="dropdown-inner">
+										<a id="drop4" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+											<input value="hz" name="city" type="hidden" class="">
+											<i class="caret"></i><span>请选择</span>
+										</a>
+										<ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+											<li role="presentation" class="">
+												<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+											</li>
+											<li role="presentation" class="">
+												<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+											</li>
+										</ul>
+									</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  设备编码
+							</label>
+							<div class="controls">
+								<input type="text" class="input-medium">
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  设备名称
+							</label>
+							<div class="controls">
+								<input type="text" class="input-medium">
+							</div>
+						</li>
+					</ul>
+					<ul class="query-group orderWidth clearfix">
+						<li>
+							<label class="control-label">
+							  是否匹配设备管理
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+									<span class="dropdown-inner">
+										<a id="drop4" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+											<input value="hz" name="city" type="hidden" class="">
+											<i class="caret"></i><span>请选择</span>
+										</a>
+										<ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+											<li role="presentation" class="">
+												<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+											</li>
+											<li role="presentation" class="">
+												<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+											</li>
+										</ul>
+									</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  生产厂家
+							</label>
+							<div class="controls">
+								<input type="text" class="input-medium"  >
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  位置
+							</label>
+							<div class="controls">
+								<input type="text" class="input-medium"  >
+							</div>
+						</li>
+						
+						<li>
+							<label class="control-label">
+							  设备等级
+							</label>
+							<div class="controls">
+								<input type="text" class="input-medium">
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  关键设备
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+									<span class="dropdown-inner">
+										<a id="drop4" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+											<input value="hz" name="city" type="hidden" class="">
+											<i class="caret"></i><span>请选择</span>
+										</a>
+										<ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+											<li role="presentation" class="">
+												<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+											</li>
+											<li role="presentation" class="">
+												<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+											</li>
+										</ul>
+									</span>
+								</span>
+							</div>
+						</li>
+					</ul>
+					<ul class="query-group orderWidth clearfix">
+						<li>
+							<label class="control-label">
+							  是否含法定节假日
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+									<span class="dropdown-inner">
+										<a id="drop4" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+											<input value="hz" name="city" type="hidden" class="">
+											<i class="caret"></i><span>请选择</span>
+										</a>
+										<ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+											<li role="presentation" class="">
+												<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+											</li>
+											<li role="presentation" class="">
+												<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+											</li>
+										</ul>
+									</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  是否含双休日
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+									<span class="dropdown-inner">
+										<a id="drop4" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+											<input value="hz" name="city" type="hidden" class="">
+											<i class="caret"></i><span>请选择</span>
+										</a>
+										<ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+											<li role="presentation" class="">
+												<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+											</li>
+											<li role="presentation" class="">
+												<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+											</li>
+										</ul>
+									</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  设备运行小时
+							</label>
+							<div class="controls">
+								<input type="text" class="input-medium "  >
+							</div>
+						</li>
+					</ul>
+					<div class="arm-submit-group">
+						<button type="button" class="sui-btn btn-primary">提交</button>
+					</div>
+				  <h2 class="x_modaltitle">设备台帐</h2>
+				  <div id="table_id_equipmentTab"></div>
+				  <h2 class="x_modaltitle">设备台帐</h2>
+				  <div class="roleAddcontent">
+					<label style="width:80px;">参数数量待定</label>
+					<input type="text" class="input-medium" >
+					<label style="width:80px;">参数数量待定</label>
+					<input type="text" class="input-medium" >
+					<label style="width:80px;">参数数量待定</label>
+					<input type="text" class="input-medium" >
+				 </div>
+				   <div id="table_id_knowledgeTab"></div>
+			  </div>			  
+			</div>
+		</div>	
+		<script id="template_requirementOrderDetail" type="text/html"><!--反馈详情-->
+			<div id="myModal1" tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade">	
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<!--<button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close">×</button>-->
+					<h4 id="myModalLabel" class="modal-title">Modal title111</h4>
+				  </div>
+				  <div class="modal-body">
+					<div class="sui-form sui-validate scrollwidthpop">
+						<div class="roleAddcontent staffwid feedline">
+							<ul class="displaytype">
+								<li class="mb20">
+									<label>
+									  反馈内容
+									</label>
+									<textarea style="height:78px;width:420px;" class="input-xxlarge" name="content"></textarea>
+								</li>
+								<li class="mb20">
+									<label>
+									  回复内容
+									</label>
+									<textarea style="height:78px;width:420px;" class="input-xxlarge" name="content"></textarea>
+								</li>
+							</ul>
+							<div class="audiobox displaytype" style="margin-top:0;">
+								<ul>
+									<li class="fl"></li>
+									<li class="fl"></li>
+									<li class="fl"></li>
+								</ul>	
+								<div class="clear"></div>
+								<audio class="mt20" controls="controls" height="100" width="100">
+								  <source src="../../skin/images/song.mp3" type="audio/mp3" />
+								  <source src="../../skin/images/song.ogg" type="audio/ogg" />
+								  <embed height="100" width="100" src="../../skin/images/song.mp3" />
+								</audio>
+							</div>
+						</div>
+					</div>
+				  </div>
+				  </div>
+				  <div class="modal-footer">
+					<!--<button type="button" data-ok="modal"  class="sui-btn btn-primary btn-large">发送</button>-->
+					<button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large">关闭</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</script>
+		<script id="template_processDetail" type="text/html"><!--流程详情-->
+			<div id="myModal1" tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade">	
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<!--<button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close">×</button>-->
+					<h4 id="myModalLabel" class="modal-title">Modal title111</h4>
+				  </div>
+				  <div class="modal-body">
+					<div class="sui-form sui-validate scrollwidthpop">
+						<!--<div class="sui-steps-round">
+						  <div class="finished">
+							<div class="wrap">
+							  <div class="round"></div>
+							  <div class="bar"></div>
+							</div>
+							<label>审批人1：通过</label>
+						  </div>
+						  <div class="current">
+							<div class="wrap">
+							  <div class="round"></div>
+							  <div class="bar"></div>
+							</div>
+							<label>审批人2：通过</label>
+						  </div>
+						  <div class="todo">
+							<div class="wrap">
+							  <div class="round"></div>
+							  <div class="bar"></div>
+							</div>
+							<label>审批人3：返回上一级</label>
+						  </div>
+						  <div class="todo">
+							<div class="wrap">
+							  <div class="round"></div>
+							   <div class="bar"></div>
+							</div>
+							<label>审批人2：通过</label>
+						  </div>
+						  <div class="todo last">
+							<div class="wrap">
+							  <div class="round"></div>
+							</div>
+							<label>完成</label>
+						  </div>
+						</div>-->
+						<div class="sui-row-fluid process_wrapper">
+							<div class="left">
+								<img class="process" src="../../skin/images/process_left.png" alt="">
+								<div class="green divcircel"></div>
+								<div class="green divline"></div>
+								<div class="text">发起：XXXX</div>
+							</div>
+							<div class="center">
+								<img class="process" src="../../skin/images/process_centre.png" alt="">
+								<div class="green"></div>
+							</div>
+							<div class="point">
+								<img class="process" src="../../skin/images/process_centre point.png" alt="">
+								<div class="green divcircel"></div>
+								<div class="green divline"></div>
+								<div class="text">审批：XXXX</div>
+							</div>
+							<div class="center">
+								<img class="process" src="../../skin/images/process_centre.png" alt="">
+								<div class="green divline"></div>
+							</div>
+							<div class="point">
+								<img class="process" src="../../skin/images/process_centre point.png" alt="">
+								<div class="green divcircel"></div>
+								<div class="green divline"></div>
+								<div class="text">审批：XXXXXXXXXXXXXXXXXXXX</div>
+							</div>
+							<div class="center">
+								<img class="process" src="../../skin/images/process_centre.png" alt="">
+								<!--<div class="green divline"></div>-->
+							</div>
+							<div class="right">
+								<img class="process" src="../../skin/images/process_right.png" alt="">
+								<!--<div class="green divcircel"></div>
+								<div class="green divline"></div>-->
+							</div>
+						</div>
+					</div>
+				  </div>
+				  </div>
+				  <div class="modal-footer">
+					<!--<button type="button" data-ok="modal"  class="sui-btn btn-primary btn-large">发送</button>-->
+					<button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large">关闭</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</script>
+		<script id="template_partsDetail" type="text/html"><!--配件详情-->
+			<div id="myModal1" tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade">	
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<!--<button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close">×</button>-->
+					<h4 id="myModalLabel" class="modal-title">Modal title111</h4>
+				  </div>
+				  <div class="modal-body">
+					<div class="sui-form sui-validate scrollwidthpop">
+						<div id="table_id_partstab"></div>
+					</div>
+				  </div>
+				  </div>
+				  <div class="modal-footer">
+					<!--<button type="button" data-ok="modal"  class="sui-btn btn-primary btn-large">发送</button>-->
+					<button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large">关闭</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</script>
+	</body>
+</html>
+

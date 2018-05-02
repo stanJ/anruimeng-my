@@ -1,0 +1,13 @@
+.tp-group{
+	width: 24.8%;
+}
+.tp-group>div{
+	display: inline-block; 
+	margin: 0 auto;
+}
+.tp-group .tp-group-right{
+	width: 156px;padding: 5px 0px; 
+	background:#329632;
+	color: white ; 
+	border-bottom: solid 4px #1b601b;
+}

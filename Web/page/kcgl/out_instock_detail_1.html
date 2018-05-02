@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>出入库详情</title>
+		<link rel="stylesheet" type="text/css" href="../../skin/css/main.css" />
+		<script src="../../lib/seajs/sea.js" type="text/javascript" charset="utf-8" id="seajsnode"></script>
+	</head>
+
+	<body>
+		<div id="content-wrapper">
+			<div id="content">
+				<span class="arm-title-s">出入库详情</span>
+				<div class="arm-nav-wrapper"><span class="arm-nav-text" data-href="out_instock_detail">出入库明细</span><i class="sui-icon icon-arrow-right arm-nav-arrow"></i><span class="arm-nav-text">出入库详情</span></div>
+				<div class="arm-title-first has-back-icon" data-href="out_instock_detail"><i class="sui-icon icon-pc-chevron-right"></i>
+					<div class="arm-title-text">出入库详情</div>
+					<div class="arm-back-wrapper">
+						
+					</div>
+				</div>
+				<form class="sui-form form-horizontal mt20 clearfix">
+					<span class="table-title-md">申请书详情</span>
+					<ul class="query-group clearfix">
+						<li>
+							<label class="control-label label-m">
+							  项目名称
+							</label>
+							<div class="controls">
+								<input type="text" class="input-medium" readonly/>
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  类型1
+							</label>
+							<div class="controls">
+								<input type="text" class="input-medium" readonly/>
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  类型2
+							</label>
+							<div class="controls">
+								<input type="text" class="input-medium" readonly/>
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  申请人
+							</label>
+							<div class="controls">
+								<input type="text" value="" class="input-medium" readonly />
+							</div>
+						</li>
+					</ul>
+					<ul class="query-group clearfix">
+						<li>
+							<label class="control-label label-m v-top">
+							  申请原因
+							</label>
+							<div class="controls">
+								<!--<input type="text" value="" class="input-medium" readonly />-->
+								<textarea  class="input-xxlarge" readonly></textarea>
+							</div>
+						</li>
+					</ul>
+					<ul class="query-group clearfix">
+						<li>
+							<label class="control-label label-m">
+							  备注
+							</label>
+							<div class="controls">
+								<input type="text" value="" class="input-xxlarge" readonly />
+							</div>
+						</li>
+					</ul>
+					<ul class="query-group clearfix">
+						<li>
+							<label class="control-label label-m">
+							  预算
+							</label>
+							<div class="controls">
+								<input type="text" value="" class="input-medium" readonly />
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  用途
+							</label>
+							<div class="controls">
+								<input type="text" value="" class="input-medium" readonly />
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  工单号
+							</label>
+							<div class="controls">
+								<input type="text" value="" class="input-medium" readonly />
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  申请人工号
+							</label>
+							<div class="controls">
+								<input type="text" value="" class="input-medium" readonly />
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  申请人手机
+							</label>
+							<div class="controls">
+								<input type="text" value="" class="input-medium" readonly />
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  审批流
+							</label>
+							<div class="controls">
+								<input type="text" class="input-medium" readonly/>
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  接收方
+							</label>
+							<div class="controls">
+								<input type="text" class="input-medium" readonly/>
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  发送方
+							</label>
+							<div class="controls">
+								<input type="text" value="" class="input-medium" readonly />
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  接收人
+							</label>
+							<div class="controls">
+								<input type="text" class="input-medium" readonly />
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  状态
+							</label>
+							<div class="controls">
+								<input type="text" class="input-medium" readonly />
+							</div>
+						</li>
+					</ul>
+					<span class="table-title-md">出入库物料列表</span>
+					<div id="table1" class="table-wrapper" style="width: 100%;"></div>
+					<span class="table-title-md">节点审批情况</span>
+					<div id="table2" class="table-wrapper" style="width: 100%;"></div>
+					<div class="arm-block arm-label-lg">
+					<span class="table-title-md">相关工单详情</span>
+					<ul class="query-group clearfix arm-label-lg">
+						<li>
+							<label class="control-label label-m">
+							  工单号
+							</label>
+							<div class="controls">
+								<input type="text" class="input-medium" readonly />
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  工单状态
+							</label>
+							<div class="controls">
+								<input type="text" class="input-medium" readonly/>
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  工单等级
+							</label>
+							<div class="controls">
+								<input type="text" value="" class="input-medium" readonly />
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  生成时间
+							</label>
+							<div class="controls">
+								<input type="text" value="" class="input-medium" readonly />
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  派发时间
+							</label>
+							<div class="controls">
+								<input type="text" value="" class="input-medium" readonly />
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  接单时间
+							</label>
+							<div class="controls">
+								<input type="text" value="" class="input-medium" readonly />
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  开始处理时间
+							</label>
+							<div class="controls">
+								<input type="text" value="" class="input-medium" readonly />
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  完成时间
+							</label>
+							<div class="controls">
+								<input type="text" value="" class="input-medium" readonly />
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  服务分类
+							</label>
+							<div class="controls">
+								<input type="text" value="" class="input-medium" readonly />
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  服务种类
+							</label>
+							<div class="controls">
+								<input type="text" value="" class="input-medium" readonly />
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  服务子类
+							</label>
+							<div class="controls">
+								<input type="text" value="" class="input-medium" readonly />
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  要求响应时间点
+							</label>
+							<div class="controls">
+								<input type="text" class="input-medium" readonly/>
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  要求解决时间点
+							</label>
+							<div class="controls">
+								<input type="text" value="" class="input-medium" readonly />
+							</div>
+						</li>
+					</ul>
+					<ul class="query-group clearfix arm-label-lg">
+						<li>
+							<label class="control-label label-m">
+							  备注
+							</label>
+							<div class="controls">
+								<input type="text" value="" class="input-xxlarge" readonly />
+							</div>
+						</li>
+					</ul>
+					<img src="../../skin/images/ic_default.png" class="arm-img-default"/>
+				</form>
+
+			</div>
+		</div>
+		<script id="template1" type="text/html">
+			<div id="myModal1" tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade">	
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<!--<button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close">×</button>-->
+					<h4 id="myModalLabel" class="modal-title">Modal title111</h4>
+				  </div>
+				  <div class="modal-body">
+					<form class="sui-form scrollwidthpop sui-validate label-w">
+						<div class="roleAddcontent">
+							<label>
+							  物料大类
+							</label>
+							<input type="text" class="input-medium" readonly />
+							<label>
+							  物料小类
+							</label>
+							<input type="text" class="input-medium" readonly />
+							<label>
+							  物料名称
+							</label>
+							<input type="text" class="input-medium" readonly />
+							<label>
+							  物料规格
+							</label>
+							<input type="text" class="input-medium" readonly />
+							<label>
+							  物料编号
+							</label>
+							<input type="text" class="input-medium" readonly />
+							<label>
+							  仓库名称
+							</label>
+							<input type="text" class="input-medium" readonly />
+						</div>
+						<div class="roleAddcontent">
+							
+							<label>
+							  位置1
+							</label>
+							<input type="text" class="input-medium" readonly />
+							<label>
+							  位置2
+							</label>
+							<input type="text" class="input-medium" readonly />
+							<label>
+							  位置3
+							</label>
+							<input type="text" class="input-medium" readonly />
+							
+						</div>
+						<div class="roleAddcontent">
+							<label>
+							  系统
+							</label>
+							<input type="text" class="input-medium" readonly />
+							<label>
+							  设备
+							</label>
+							<input type="text" class="input-medium" readonly />
+							<label>
+							  设备类别
+							</label>
+							<input type="text" class="input-medium" readonly />
+							<label>
+							  数量
+							</label>
+							<input type="text" class="input-medium" readonly />
+							
+						</div>
+						<div class="roleAddcontent">
+							<label>
+							  单位
+							</label>
+							<input type="text" class="input-medium" readonly />
+							<label>
+							  价格区间
+							</label>
+							<input type="text" class="input-medium" readonly />
+						</div>
+						<div class="roleAddcontent input-xl-wrapper">
+							<label>
+							  备注
+							</label>
+							<div class="controls">
+								<input type="text" class="input-xlarge input-xl" readonly="">
+							</div>
+						</div>
+						<span class="table-title-sm">出入库批次列表</span>
+						<div class="roleAddcontent">
+							<div id="table3" class="table-wrapper"></div>
+						</div>
+				  	</form>
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large">关闭</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</script>	
+	</body>
+
+</html>

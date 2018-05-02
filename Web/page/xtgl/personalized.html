@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个性化登录</title>
+		<link rel="stylesheet" type="text/css" href="../../skin/css/main.css"/><!--框架布局css-->
+		<link rel="stylesheet" type="text/css" href="../../skin/css/management.css"/><!--主页面css-->
+		<script src="../../lib/seajs/sea.js" type="text/javascript" charset="utf-8" id="seajsnode"></script>
+		<style type="text/css">
+			.logo-label{
+				    float: left;
+				    margin-top: 74px;
+				    margin-right: 8px;
+			}
+			.website-title{
+				border: 0;
+			    margin-right: 8px;
+			    padding: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<!--主体内容-->
+		<div id="content-wrapper">
+			<div id="content">
+				<!--正文开始-->	
+				<div class="arm-title-s">个性化登录</div>
+				<div class="sui-form form-horizontal mt20">
+					<div class="personCon">
+						<h2>登录模板选择</h2>
+						<div class="mouldbox">
+							<div class="mouldelement">
+								<span>模板一</span>
+								<div class="mouldPic"></div>
+								<a class="sui-btn btn-primary btn-borderadius">选择模板</a>
+							</div>
+							<div class="mouldelement selected">
+								<span>模板二</span>
+								<div class="mouldPic"></div>
+								<a class="sui-btn btn-primary btn-borderadius">已选择</a>
+							</div>
+							<div class="mouldelement mouldeleLast">
+								<span>模板三</span>
+								<div class="mouldPic"></div>
+								<a class="sui-btn btn-primary btn-borderadius">选择模板</a>
+							</div>
+						</div>
+						<h2 class="clear">背景图片</h2>
+						<div class="backgroundPicBox clearfix">
+							<div class="fr">
+								<button id="btn_picupload" type="button" class="sui-btn btn-primary btn-borderadius">图片上传</button>
+								<button id="btn_delete" type="button" class="sui-btn btn-borderadius btn-primaryRed">删除选中项</button>
+							</div>
+						</div>
+						<div id="table_id_personalized" style="margin-bottom:20px;"></div>
+						<h2>基本配置</h2>
+						<div class="basicSetItem">
+							<div class="itembox">
+								<div class="itemTit fl website-title">网站标题</div>
+								<input type="text" placeholder="网站标题" value="" class="input-medium fl">
+							</div>
+							<div class="logoUploadbox">
+								<label class="logo-label">上传logo</label>
+								<img id="logo" src="" class="logoPicBox fl">
+								<div class="logoUpload fl">
+									
+									<div class="btn_bdhqupload">
+										<button type="button" class="sui-btn btn-bdhq">浏览本地</button>
+										<input type="file" class="backoricon" previewImg="#logo" onchange="utilObj.previewFile(this)" />
+									</div>
+									<button type="button" class="sui-btn btn-primary">上传</button>
+									<p>提示：上传图片宽高比相同，建议为400*400像素。</p>
+								</div>
+							</div>
+						</div>
+						<h2>图标配置</h2>
+						<div class="iconDeployBox">
+							<div class="itemTit mt0">需求工单</div>
+							<div class="demandOrder">
+								<img id="xqgd" src="../../skin/images/ic_default.png" style="display:inline-block;height:90px;width:90px;" />
+								<span class="ftit">上传图标</span>
+								<input type="text" value="" class="input-medium" style="width:200px;">
+								<div class="btn_bdhqupload">
+									<button type="button" class="sui-btn btn-bdhq">浏览本地</button>
+									<input type="file" class="backoricon" previewImg="#xqgd" onchange="utilObj.previewFile(this)" />
+								</div>
+								<button type="button" class="sui-btn btn-primary">上传</button>
+								<button type="button" class="sui-btn btn-primaryBlue">还原默认</button>
+							</div>
+						</div>
+						<div class="iconDeployBox">
+							<div class="itemTit mt0">巡检</div>
+							<div class="demandOrder">
+								<img id="xj" src="../../skin/images/ic_default.png" style="display:inline-block;height:90px;width:90px;" />
+								<span class="ftit">上传图标</span>
+								<input type="text" value="" class="input-medium" style="width:200px;">
+								<div class="btn_bdhqupload">
+									<button type="button" class="sui-btn btn-bdhq">浏览本地</button>
+									<input type="file" class="backoricon" previewImg="#xj" onchange="utilObj.previewFile(this)" />
+								</div>
+								<button type="button" class="sui-btn btn-primary">上传</button>
+								<button type="button" class="sui-btn btn-primaryBlue">还原默认</button>
+							</div>
+						</div>
+						<div class="iconDeployBox">
+							<div class="itemTit mt0">统计</div>
+							<div class="demandOrder">
+								<img id="tj" src="../../skin/images/ic_default.png" style="display:inline-block;height:90px;width:90px;" />
+								<span class="ftit">上传图标</span>
+								<input type="text" value="" class="input-medium" style="width:200px;">
+								<div class="btn_bdhqupload">
+									<button type="button" class="sui-btn btn-bdhq">浏览本地</button>
+									<input type="file" class="backoricon" previewImg="#tj" onchange="utilObj.previewFile(this)" />
+								</div>
+								<button type="button" class="sui-btn btn-primary">上传</button>
+								<button type="button" class="sui-btn btn-primaryBlue">还原默认</button>
+							</div>
+						</div>
+						<div class="iconDeployBox">
+							<div class="itemTit mt0">我的服务需求</div>
+							<div class="demandOrder">
+								<img id="myfwxq" src="../../skin/images/ic_default.png" style="display:inline-block;height:90px;width:90px;" />
+								<span class="ftit">上传图标</span>
+								<input type="text" value="" class="input-medium" style="width:200px;">
+								<div class="btn_bdhqupload">
+									<button type="button" class="sui-btn btn-bdhq">浏览本地</button>
+									<input type="file" class="backoricon" previewImg="#myfwxq" onchange="utilObj.previewFile(this)" />
+								</div>
+								<button type="button" class="sui-btn btn-primary">上传</button>
+								<button type="button" class="sui-btn btn-primaryBlue">还原默认</button>
+							</div>
+						</div>
+						<div class="iconDeployBox">
+							<div class="itemTit mt0">服务需求</div>
+							<div class="demandOrder">
+								<img id="fwxq" src="../../skin/images/ic_default.png" style="display:inline-block;height:90px;width:90px;" />
+								<span class="ftit">上传图标</span>
+								<input type="text" value="" class="input-medium" style="width:200px;">
+								<div class="btn_bdhqupload">
+									<button type="button" class="sui-btn btn-bdhq">浏览本地</button>
+									<input type="file" class="backoricon" previewImg="#fwxq" onchange="utilObj.previewFile(this)" />
+								</div>
+								<button type="button" class="sui-btn btn-primary">上传</button>
+								<button type="button" class="sui-btn btn-primaryBlue">还原默认</button>
+							</div>
+						</div>
+						<div class="iconDeployBox">
+							<div class="itemTit mt0">预防性维护工单</div>
+							<div class="demandOrder">
+								<img id="yfxwhgd" src="../../skin/images/ic_default.png" style="display:inline-block;height:90px;width:90px;" />
+								<span class="ftit">上传图标</span>
+								<input type="text" value="" class="input-medium" style="width:200px;">
+								<div class="btn_bdhqupload">
+									<button type="button" class="sui-btn btn-bdhq">浏览本地</button>
+									<input type="file" class="backoricon" previewImg="#yfxwhgd" onchange="utilObj.previewFile(this)" />
+								</div>
+								<button type="button" class="sui-btn btn-primary">上传</button>
+								<button type="button" class="sui-btn btn-primaryBlue">还原默认</button>
+							</div>
+						</div>
+						<div class="iconDeployBox">
+							<div class="itemTit mt0">质量管理</div>
+							<div class="demandOrder">
+								<img id="zlgl" src="../../skin/images/ic_default.png" style="display:inline-block;height:90px;width:90px;" />
+								<span class="ftit">上传图标</span>
+								<input type="text" value="" class="input-medium" style="width:200px;">
+								<div class="btn_bdhqupload">
+									<button type="button" class="sui-btn btn-bdhq">浏览本地</button>
+									<input type="file" class="backoricon" previewImg="#zlgl" onchange="utilObj.previewFile(this)" />
+								</div>
+								<button type="button" class="sui-btn btn-primary">上传</button>
+								<button type="button" class="sui-btn btn-primaryBlue">还原默认</button>
+							</div>
+						</div>
+						<div class="iconDeployBox">
+							<div class="itemTit mt0">审批管理</div>
+							<div class="demandOrder">
+								<img id="spgl" src="../../skin/images/ic_default.png" style="display:inline-block;height:90px;width:90px;" />
+								<span class="ftit">上传图标</span>
+								<input type="text" value="" class="input-medium" style="width:200px;">
+								<div class="btn_bdhqupload">
+									<button type="button" class="sui-btn btn-bdhq">浏览本地</button>
+									<input type="file" class="backoricon" previewImg="#spgl" onchange="utilObj.previewFile(this)" />
+								</div>
+								<button type="button" class="sui-btn btn-primary">上传</button>
+								<button type="button" class="sui-btn btn-primaryBlue">还原默认</button>
+							</div>
+						</div>
+						<div class="iconDeployBox">
+							<div class="itemTit mt0">考勤</div>
+							<div class="demandOrder">
+								<img id="kq" src="../../skin/images/ic_default.png" style="display:inline-block;height:90px;width:90px;" />
+								<span class="ftit">上传图标</span>
+								<input type="text" value="" class="input-medium" style="width:200px;">
+								<div class="btn_bdhqupload">
+									<button type="button" class="sui-btn btn-bdhq">浏览本地</button>
+									<input type="file" class="backoricon" previewImg="#kq" onchange="utilObj.previewFile(this)" />
+								</div>
+								<button type="button" class="sui-btn btn-primary">上传</button>
+								<button type="button" class="sui-btn btn-primaryBlue">还原默认</button>
+							</div>
+						</div>
+						<div class="iconDeployBox">
+							<div class="itemTit mt0">签到</div>
+							<div class="demandOrder">
+								<img id="qd" src="../../skin/images/ic_default.png" style="display:inline-block;height:90px;width:90px;" />
+								<span class="ftit">上传图标</span>
+								<input type="text" value="" class="input-medium" style="width:200px;">
+								<div class="btn_bdhqupload">
+									<button type="button" class="sui-btn btn-bdhq">浏览本地</button>
+									<input type="file" class="backoricon" previewImg="#qd" onchange="utilObj.previewFile(this)" />
+								</div>
+								<button type="button" class="sui-btn btn-primary">上传</button>
+								<button type="button" class="sui-btn btn-primaryBlue">还原默认</button>
+							</div>
+						</div>
+						<div class="iconDeployBox">
+							<div class="itemTit mt0">工单审核</div>
+							<div class="demandOrder">
+								<img id="gdsh" src="../../skin/images/ic_default.png" style="display:inline-block;height:90px;width:90px;" />
+								<span class="ftit">上传图标</span>
+								<input type="text" value="" class="input-medium" style="width:200px;">
+								<div class="btn_bdhqupload">
+									<button type="button" class="sui-btn btn-bdhq">浏览本地</button>
+									<input type="file" class="backoricon" previewImg="#gdsh" onchange="utilObj.previewFile(this)" />
+								</div>
+								<button type="button" class="sui-btn btn-primary">上传</button>
+								<button type="button" class="sui-btn btn-primaryBlue">还原默认</button>
+							</div>
+						</div>
+						<div class="iconDeployBox">
+							<div class="itemTit mt0">待上传</div>
+							<div class="demandOrder">
+								<img id="dsc" src="../../skin/images/ic_default.png" style="display:inline-block;height:90px;width:90px;" />
+								<span class="ftit">上传图标</span>
+								<input type="text" value="" class="input-medium" style="width:200px;">
+								<div class="btn_bdhqupload">
+									<button type="button" class="sui-btn btn-bdhq">浏览本地</button>
+									<input type="file" class="backoricon" previewImg="#dsc" onchange="utilObj.previewFile(this)" />
+								</div>
+								<button type="button" class="sui-btn btn-primary">上传</button>
+								<button type="button" class="sui-btn btn-primaryBlue">还原默认</button>
+							</div>
+						</div>
+						<div class="iconDeployBox">
+							<div class="itemTit mt0">日历</div>
+							<div class="demandOrder">
+								<img id="rl" src="../../skin/images/ic_default.png" style="display:inline-block;height:90px;width:90px;" />
+								<span class="ftit">上传图标</span>
+								<input type="text" value="" class="input-medium" style="width:200px;">
+								<div class="btn_bdhqupload">
+									<button type="button" class="sui-btn btn-bdhq">浏览本地</button>
+									<input type="file" class="backoricon" previewImg="#rl" onchange="utilObj.previewFile(this)" />
+								</div>
+								<button type="button" class="sui-btn btn-primary">上传</button>
+								<button type="button" class="sui-btn btn-primaryBlue">还原默认</button>
+							</div>
+						</div>
+						<div class="iconDeployBox">
+							<div class="itemTit mt0">热线电话</div>
+							<div class="demandOrder">
+								<img id="rxdh" src="../../skin/images/ic_default.png" style="display:inline-block;height:90px;width:90px;" />
+								<span class="ftit">上传图标</span>
+								<input type="text" value="" class="input-medium" style="width:200px;">
+								<div class="btn_bdhqupload">
+									<button type="button" class="sui-btn btn-bdhq">浏览本地</button>
+									<input type="file" class="backoricon" previewImg="#rxdh" onchange="utilObj.previewFile(this)"  />
+								</div>
+								<button type="button" class="sui-btn btn-primary">上传</button>
+								<button type="button" class="sui-btn btn-primaryBlue">还原默认</button>
+							</div>
+						</div>
+						<div class="iconDeployBox">
+							<div class="itemTit mt0">即时聊天</div>
+							<div class="demandOrder">
+								<img id="jslt" src="../../skin/images/ic_default.png" style="display:inline-block;height:90px;width:90px;" />
+								<span class="ftit">上传图标</span>
+								<input type="text" value="" class="input-medium" style="width:200px;">
+								<div class="btn_bdhqupload">
+									<button type="button" class="sui-btn btn-bdhq">浏览本地</button>
+									<input type="file" class="backoricon" previewImg="#jslt" onchange="utilObj.previewFile(this)" />
+								</div>
+								<button type="button" class="sui-btn btn-primary">上传</button>
+								<button type="button" class="sui-btn btn-primaryBlue">还原默认</button>
+							</div>
+						</div>
+						<div class="iconDeployBox">
+							<div class="itemTit mt0">温湿度监控</div>
+							<div class="demandOrder">
+								<img id="wsdjk" src="../../skin/images/ic_default.png" style="display:inline-block;height:90px;width:90px;" />
+								<span class="ftit">上传图标</span>
+								<input type="text" value="" class="input-medium" style="width:200px;">
+								<div class="btn_bdhqupload">
+									<button type="button" class="sui-btn btn-bdhq">浏览本地</button>
+									<input type="file" class="backoricon" previewImg="#wsdjk" onchange="utilObj.previewFile(this)" />
+								</div>
+								<button type="button" class="sui-btn btn-primary">上传</button>
+								<button type="button" class="sui-btn btn-primaryBlue">还原默认</button>
+							</div>
+						</div>
+						<div class="iconDeployBox">
+							<div class="itemTit mt0">视频监控</div>
+							<div class="demandOrder">
+								<img src="../../skin/images/ic_default.png" style="display:inline-block;height:90px;width:90px;" />
+								<span class="ftit">上传图标</span>
+								<input type="text" value="" class="input-medium" style="width:200px;">
+								<div class="btn_bdhqupload">
+									<button type="button" class="sui-btn btn-bdhq">浏览本地</button>
+									<input type="file" class="backoricon" previewImg="#spjk" onchange="utilObj.previewFile(this)" />
+								</div>
+								<button type="button" class="sui-btn btn-primary">上传</button>
+								<button type="button" class="sui-btn btn-primaryBlue">还原默认</button>
+							</div>
+						</div>
+						<div class="iconDeployBox">
+							<div class="itemTit mt0">审批</div>
+							<div class="demandOrder">
+								<img id="sp" src="../../skin/images/ic_default.png" style="display:inline-block;height:90px;width:90px;" />
+								<span class="ftit">上传图标</span>
+								<input type="text" value="" class="input-medium" style="width:200px;">
+								<div class="btn_bdhqupload">
+									<button type="button" class="sui-btn btn-bdhq">浏览本地</button>
+									<input type="file" class="backoricon" previewImg="#sp" onchange="utilObj.previewFile(this)" />
+								</div>
+								<button type="button" class="sui-btn btn-primary">上传</button>
+								<button type="button" class="sui-btn btn-primaryBlue">还原默认</button>
+							</div>
+						</div>
+						<div class="iconDeployBox">
+							<div class="itemTit mt0">知识库</div>
+							<div class="demandOrder">
+								<img id="zsk" src="../../skin/images/ic_default.png" style="display:inline-block;height:90px;width:90px;" />
+								<span class="ftit">上传图标</span>
+								<input type="text" value="" class="input-medium" style="width:200px;">
+								<div class="btn_bdhqupload">
+									<button type="button" class="sui-btn btn-bdhq">浏览本地</button>
+									<input type="file" class="backoricon" previewImg="#zsk" onchange="utilObj.previewFile(this)" />
+								</div>
+								<button type="button" class="sui-btn btn-primary">上传</button>
+								<button type="button" class="sui-btn btn-primaryBlue">还原默认</button>
+							</div>
+						</div>
+					</div> 
+					
+				</div>			  
+			</div>
+		</div>
+		<script id="template_addBackPicModal" type="text/html">
+			<div id="myModal1" tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade">	
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<!--<button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close">×</button>-->
+					<h4 id="myModalLabel" class="modal-title">Modal title111</h4>
+				  </div>
+				  <div class="modal-body">
+					<div class="sui-form scrollwidthpop sui-validate">
+						<div class="roleAddcontent">
+							<div id="img1" class="pic_background">
+								<img src=""  style="display:none;" />
+							</div>
+							<div id="btn_localpic">
+								<button type="button" class="sui-btn btn-bdhq">浏览本地</button>
+								<input type="file" class="backoricon" previewImg="#img1" onchange="utilObj.previewFile(this)"  />
+							</div>
+							
+							
+						</div>									
+					</div>	
+					
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" data-ok="modal"  class="sui-btn btn-primary btn-large">上传</button>
+					<button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large">取消</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</script>
+		<script id="template_addlocalPicModal" type="text/html">
+			<div id="myModal1" tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade">	
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<!--<button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close">×</button>-->
+					<h4 id="myModalLabel" class="modal-title">Modal title111</h4>
+				  </div>
+				  <div class="modal-body">
+					<div class="sui-form scrollwidthpop sui-validate">
+						<div class="roleAddcontent">
+							<div class="pic_background"></div>
+							<div class="madelist">
+								<button type="button" class="sui-btn btn-bdhq">放大</button>
+								<button type="button" class="sui-btn btn-bdhq">缩小</button>
+								<button type="button" class="sui-btn btn-bdhq">旋转</button>
+								<button type="button" class="sui-btn btn-bdhq">裁剪</button>
+							</div>
+							
+						</div>									
+					</div>	
+					
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" data-ok="modal"  class="sui-btn btn-primary btn-large">完成</button>
+					<button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large">取消</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</script>
+	</body>
+</html>
+

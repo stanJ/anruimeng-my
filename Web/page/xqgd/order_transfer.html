@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>工单转派管理</title>
+		<link rel="stylesheet" type="text/css" href="../../skin/css/main.css"/><!--框架布局css-->
+		<link rel="stylesheet" type="text/css" href="../../skin/css/management.css"/><!--主页面css-->
+		<script src="../../lib/seajs/sea.js" type="text/javascript" charset="utf-8" id="seajsnode"></script>
+	</head>
+	<body>
+		<!--主体内容-->
+		<div id="content-wrapper">
+			<div id="content">
+				<!--正文开始-->
+				<div class="arm-title-s">工单转派管理</div>
+				<div class="sui-form form-horizontal mt20">
+					<ul class="query-group clearfix">
+						<li>
+							<label class="control-label">
+							  项目名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop4" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="hz" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+											</a>
+											<ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+												<li role="presentation" class="">
+													<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+												</li>
+												<li role="presentation" class="">
+													<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+												</li>
+											</ul>
+										</span>
+								</span>
+							</div>
+						</li>
+						
+						<li>
+							<label class="control-label">
+							  现场名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop4" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="hz" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+											</a>
+											<ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+												<li role="presentation" class="">
+													<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+												</li>
+												<li role="presentation" class="">
+													<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+												</li>
+											</ul>
+										</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  状态
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+									<span class="dropdown-inner">
+										<a id="drop4" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+											<input value="hz" name="city" type="hidden" class="">
+											<i class="caret"></i><span>请选择</span>
+										</a>
+										<ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+											<li role="presentation" class="">
+												<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+											</li>
+											<li role="presentation" class="">
+												<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a>
+											</li>
+										</ul>
+									</span>
+								</span>
+							</div>
+						</li>
+			
+						<li>
+						  <div data-toggle="datepicker" class="input-daterange">
+						    <label class="control-label">
+						    	  开始时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						    <label class="control-label">
+						    	  结束时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						  </div>
+						</li>
+					</ul>
+					<ul class="query-group clearfix">
+						<li>
+							<label class="control-label">
+							  工单号
+							</label>
+							<div class="controls">								
+								<input type="text" class="input-medium" >
+							</div>
+							
+						</li>
+						<li class="query-li">
+							<a class="sui-btn btn-primary" style="margin-left:52px;">查询</a>
+						</li>						
+				  </ul>
+				  <div id="table_id_requirement"></div>
+			  </div>
+			  
+			  
+			</div>
+		</div>		
+	</body>
+</html>
+

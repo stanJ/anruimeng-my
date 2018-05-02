@@ -1,0 +1,2662 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>工单统计</title>
+		<link rel="stylesheet" type="text/css" href="../../skin/css/main.css" />
+		<script src="../../lib/seajs/sea.js" type="text/javascript" charset="utf-8" id="seajsnode"></script>
+	</head>
+
+	<body>
+		<div id="content-wrapper">
+			<div id="content">
+				<span class="arm-title-s">工单统计</span>
+				<div class="sui-form form-horizontal mt20 clearfix">
+					<ul class="query-group clearfix tj-input-group" id="xqgd1">
+						<li>
+							<label class="control-label">
+							  项目名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  现场名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  项目组
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  项目人员
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  服务分类
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  服务种类
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  服务子类
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  周期
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+						  <div data-toggle="datepicker" class="input-daterange">
+						    <label class="control-label">
+						    	  开始时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						    <label class="control-label">
+						    	  结束时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						  </div>
+						</li>		
+						<li class="query-li"> <a class="sui-btn btn-primary ml20">查询</a> <a class="sui-btn btn-primaryRed" style="margin-left: 15px;">清空查询</a> </li>
+					</ul>
+					<ul class="query-group clearfix tj-input-group" id="xqgd2">
+						<li>
+							<label class="control-label">
+							  项目名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  现场名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  项目组
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  项目人员
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  服务分类
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  服务种类
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  服务子类
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  周期
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+						  <div data-toggle="datepicker" class="input-daterange">
+						    <label class="control-label">
+						    	  开始时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						    <label class="control-label">
+						    	  结束时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						  </div>
+						</li>		
+						<li class="query-li"> <a class="sui-btn btn-primary ml20">查询</a> <a class="sui-btn btn-primaryRed" style="margin-left: 15px;">清空查询</a> </li>
+						
+
+					</ul>
+					<ul class="query-group clearfix tj-input-group" id="xqgd3">
+						<li>
+							<label class="control-label">
+							  项目名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  现场名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  项目组
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  项目人员
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  服务分类
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  服务种类
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  服务子类
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  周期
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+						  <div data-toggle="datepicker" class="input-daterange">
+						    <label class="control-label">
+						    	  开始时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						    <label class="control-label">
+						    	  结束时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						  </div>
+						</li>		
+						<li class="query-li"> <a class="sui-btn btn-primary ml20">查询</a> <a class="sui-btn btn-primaryRed" style="margin-left: 15px;">清空查询</a> </li>
+					</ul>
+					<ul class="query-group clearfix tj-input-group" id="xqgd4">
+						<li>
+							<label class="control-label">
+							  项目名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  现场名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  项目组
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  项目人员
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  周期
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+						  <div data-toggle="datepicker" class="input-daterange">
+						    <label class="control-label">
+						    	  开始时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						    <label class="control-label">
+						    	  结束时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						  </div>
+						</li>		
+						<li class="query-li"> <a class="sui-btn btn-primary ml20">查询</a> <a class="sui-btn btn-primaryRed" style="margin-left: 15px;">清空查询</a> </li>
+					</ul>
+					<ul class="query-group clearfix tj-input-group" id="xqgd5">
+						<li>
+							<label class="control-label">
+							  项目名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  现场名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  项目组
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  项目人员
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  服务种类
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  周期
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+						  <div data-toggle="datepicker" class="input-daterange">
+						    <label class="control-label">
+						    	  开始时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						    <label class="control-label">
+						    	  结束时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						  </div>
+						</li>		
+						<li class="query-li"> <a class="sui-btn btn-primary ml20">查询</a> <a class="sui-btn btn-primaryRed" style="margin-left: 15px;">清空查询</a> </li>
+					</ul>
+					<ul class="query-group clearfix tj-input-group" id="xqgd6">
+						<li>
+							<label class="control-label">
+							  项目名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  现场名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>						
+						<li>
+							<label class="control-label">
+							  周期
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+						  <div data-toggle="datepicker" class="input-daterange">
+						    <label class="control-label">
+						    	  开始时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						    <label class="control-label">
+						    	  结束时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						  </div>
+						</li>		
+						<li class="query-li"> <a class="sui-btn btn-primary ml20">查询</a> <a class="sui-btn btn-primaryRed" style="margin-left: 15px;">清空查询</a> </li>
+					</ul>
+					<ul class="query-group clearfix tj-input-group" id="xqgd7">
+						<li>
+							<label class="control-label">
+							  项目名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  现场名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  项目组
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  项目人员
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  服务分类
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  服务种类
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  服务子类
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  周期
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+						  <div data-toggle="datepicker" class="input-daterange">
+						    <label class="control-label">
+						    	  开始时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						    <label class="control-label">
+						    	  结束时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						  </div>
+						</li>		
+						<li class="query-li"> <a class="sui-btn btn-primary ml20">查询</a> <a class="sui-btn btn-primaryRed" style="margin-left: 15px;">清空查询</a> </li>
+					</ul>
+					<ul class="query-group clearfix tj-input-group" id="xqgd8">
+						<li>
+							<label class="control-label">
+							  项目名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  现场名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  项目组
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  项目人员
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  系统
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  设备
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  设备类别
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>				
+						<li>
+							<label class="control-label">
+							  周期
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+						  <div data-toggle="datepicker" class="input-daterange">
+						    <label class="control-label">
+						    	  开始时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						    <label class="control-label">
+						    	  结束时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						  </div>
+						</li>		
+						<li class="query-li"> <a class="sui-btn btn-primary ml20">查询</a> <a class="sui-btn btn-primaryRed" style="margin-left: 15px;">清空查询</a> </li>
+					</ul>
+					<ul class="query-group clearfix tj-input-group" id="xqgd9">
+						<li>
+							<label class="control-label">
+							  项目名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  现场名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  项目组
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  项目人员
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  系统
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  服务分类
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  服务种类
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  服务子类
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  周期
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+						  <div data-toggle="datepicker" class="input-daterange">
+						    <label class="control-label">
+						    	  开始时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						    <label class="control-label">
+						    	  结束时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						  </div>
+						</li>		
+						<li class="query-li"> <a class="sui-btn btn-primary ml20">查询</a> <a class="sui-btn btn-primaryRed" style="margin-left: 15px;">清空查询</a> </li>
+					</ul>
+					<ul class="query-group clearfix tj-input-group" id="xqgd10">
+						<li>
+							<label class="control-label">
+							  项目名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  现场名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  项目组
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  项目人员
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  系统
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  设备
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  设备类别
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>						
+						<li>
+							<label class="control-label">
+							  周期
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+						  <div data-toggle="datepicker" class="input-daterange">
+						    <label class="control-label">
+						    	  开始时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						    <label class="control-label">
+						    	  结束时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						  </div>
+						</li>		
+						<li class="query-li"> <a class="sui-btn btn-primary ml20">查询</a> <a class="sui-btn btn-primaryRed" style="margin-left: 15px;">清空查询</a> </li>
+					</ul>
+					<ul class="query-group clearfix tj-input-group" id="xqgd11">
+						<li>
+							<label class="control-label">
+							  项目名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  现场名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  工单类型
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  项目组
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  项目人员
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>					
+						<li>
+							<label class="control-label">
+							  周期
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+						  <div data-toggle="datepicker" class="input-daterange">
+						    <label class="control-label">
+						    	  开始时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						    <label class="control-label">
+						    	  结束时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						  </div>
+						</li>		
+						<li class="query-li"> <a class="sui-btn btn-primary ml20">查询</a> <a class="sui-btn btn-primaryRed" style="margin-left: 15px;">清空查询</a> </li>
+					</ul>
+					<ul class="query-group clearfix tj-input-group" id="xqgd12">
+						<li>
+							<label class="control-label">
+							  项目名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  现场名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  项目组
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  项目人员
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  服务种类
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  周期
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>																			
+						<li>
+						  <div data-toggle="datepicker" class="input-daterange">
+						    <label class="control-label">
+						    	  开始时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						    <label class="control-label">
+						    	  结束时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						  </div>
+						</li>		
+						<li class="query-li"> <a class="sui-btn btn-primary ml20">查询</a> <a class="sui-btn btn-primaryRed" style="margin-left: 15px;">清空查询</a> </li>
+					</ul>
+					<ul class="query-group clearfix tj-input-group" id="xqgd13">
+						<li>
+							<label class="control-label">
+							  项目名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  现场名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  项目组
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  项目人员
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>						
+						<li>
+							<label class="control-label">
+							  服务种类
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>					
+						<li>
+							<label class="control-label">
+							  周期
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+						  <div data-toggle="datepicker" class="input-daterange">
+						    <label class="control-label">
+						    	  开始时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						    <label class="control-label">
+						    	  结束时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						  </div>
+						</li>		
+						<li class="query-li"> <a class="sui-btn btn-primary ml20">查询</a> <a class="sui-btn btn-primaryRed" style="margin-left: 15px;">清空查询</a> </li>
+					</ul>
+					<ul class="query-group clearfix tj-input-group" id="xqgd14">
+						<li>
+							<label class="control-label">
+							  项目名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  现场名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  问题
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>						
+						<li>
+							<label class="control-label">
+							  周期
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+						  <div data-toggle="datepicker" class="input-daterange">
+						    <label class="control-label">
+						    	  开始时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						    <label class="control-label">
+						    	  结束时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						  </div>
+						</li>		
+						<li class="query-li"> <a class="sui-btn btn-primary ml20">查询</a> <a class="sui-btn btn-primaryRed" style="margin-left: 15px;">清空查询</a> </li>
+					</ul>
+					<ul class="query-group clearfix tj-input-group" id="xqgd15">
+						<li>
+							<label class="control-label">
+							  项目名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  现场名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  项目组
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  项目人员
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  服务分类
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  服务种类
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  服务子类
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  周期
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+						  <div data-toggle="datepicker" class="input-daterange">
+						    <label class="control-label">
+						    	  开始时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						    <label class="control-label">
+						    	  结束时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						  </div>
+						</li>		
+						<li class="query-li"> <a class="sui-btn btn-primary ml20">查询</a> <a class="sui-btn btn-primaryRed" style="margin-left: 15px;">清空查询</a> </li>
+					</ul>
+					<ul class="query-group clearfix tj-input-group" id="xqgd16">
+						<li>
+							<label class="control-label">
+							  项目名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  现场名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  项目组
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  项目人员
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  系统
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  设备
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  设备类别
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  周期
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+						  <div data-toggle="datepicker" class="input-daterange">
+						    <label class="control-label">
+						    	  开始时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						    <label class="control-label">
+						    	  结束时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						  </div>
+						</li>		
+						<li class="query-li"> <a class="sui-btn btn-primary ml20">查询</a> <a class="sui-btn btn-primaryRed" style="margin-left: 15px;">清空查询</a> </li>
+					</ul>
+					<ul class="query-group clearfix tj-input-group" id="xqgd17">
+						<li>
+							<label class="control-label">
+							  项目名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  现场名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  项目组
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  项目人员
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  服务分类
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  服务种类
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  服务子类
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label">
+							  周期
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+						  <div data-toggle="datepicker" class="input-daterange">
+						    <label class="control-label">
+						    	  开始时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						    <label class="control-label">
+						    	  结束时间</label>
+						    <div class="controls">
+						      <input type="text" class="input-medium input-date">
+						    </div>
+						  </div>
+						</li>		
+						<li class="query-li"> <a class="sui-btn btn-primary ml20">查询</a> <a class="sui-btn btn-primaryRed" style="margin-left: 15px;">清空查询</a> </li>
+					</ul>
+					<div class="clearfix onerow">
+						<span class="arm-title-xs fl">需求工单按时完成率</span>
+						<ul class="query-group clearfix fr">
+							<li> <button id="btn_add2" type="button" class="sui-btn btn-primary btn-borderadius btn-sm-round">导出明细</button> </li> <li> <button id="btn_add2" type="button" class="sui-btn btn-primaryBlue btn-borderadius btn-sm-round">PDF打印</button> </li>
+						</ul>
+					</div>
+					
+					<!--<div class="arm-block clearfix">
+					
+					</div>-->
+					<div class="tj-chart">图表</div>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>

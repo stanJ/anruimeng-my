@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>出库管理</title>
+		<link rel="stylesheet" type="text/css" href="../../skin/css/main.css" />
+		<script src="../../lib/seajs/sea.js" type="text/javascript" charset="utf-8" id="seajsnode"></script>
+	</head>
+
+	<body>
+		<div id="content-wrapper">
+			<div id="content">
+				<span class="arm-title-s">出库管理</span>
+				<div class="arm-nav-wrapper"><span class="arm-nav-text" data-href="outstock_manage">出库管理</span><i class="sui-icon icon-arrow-right arm-nav-arrow"></i><span class="arm-nav-text">物料出库详情</span></div>
+				<div class="arm-title-first has-back-icon" data-href="outstock_manage"><i class="sui-icon icon-pc-chevron-right"></i>
+						<div class="arm-title-text">物料出库详情</div>
+						<div class="arm-back-wrapper">
+							
+						</div>
+					</div>
+				<div class="sui-form form-horizontal mt20 clearfix">
+					<span class="table-title-md">要求出库项列表</span>
+						<ul class="query-group clearfix">
+							<li>
+							<label class="control-label"> 
+								物料大类
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+									<span class="dropdown-inner">
+										<a id="drop9" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+											<input value="hz" name="city" type="hidden" class="">
+											<i class="caret"></i><span>请选择</span>
+										</a>
+										<ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+											<li role="presentation" class="">
+												<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+											</li>
+										</ul>
+									</span>
+								</span>
+							</div>
+							</li>
+							<li>
+							<label class="control-label">
+								物料小类
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+									<span class="dropdown-inner">
+										<a id="drop9" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+											<input value="hz" name="city" type="hidden" class="">
+											<i class="caret"></i><span>请选择</span>
+										</a>
+										<ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+											<li role="presentation" class="">
+												<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+											</li>
+										</ul>
+									</span>
+								</span>
+							</div>
+							</li>
+							<li>
+							<label class="control-label">
+								物料名称
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+									<span class="dropdown-inner">
+										<a id="drop9" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+											<input value="hz" name="city" type="hidden" class="">
+											<i class="caret"></i><span>请选择</span>
+										</a>
+										<ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+											<li role="presentation" class="">
+												<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+											</li>
+										</ul>
+									</span>
+								</span>
+							</div>
+							</li>
+							<li>
+							<label class="control-label">
+								规格
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+									<span class="dropdown-inner">
+										<a id="drop9" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+											<input value="hz" name="city" type="hidden" class="">
+											<i class="caret"></i><span>请选择</span>
+										</a>
+										<ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+											<li role="presentation" class="">
+												<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+											</li>
+										</ul>
+									</span>
+								</span>
+							</div>
+							</li>
+							<li class="query-li">
+								<a class="sui-btn btn-primary" style="margin-left:52px;">查询</a>
+							</li>
+						</ul>
+						
+						<div id="table2" class="table-wrapper"></div>
+							
+						<ul class="query-group clearfix">
+							<li>
+							<label class="control-label">
+								总价
+							</label>
+							<div class="controls">
+								<input type="text" class="input-medium" />
+							</div>
+							</li>
+						</ul>
+						<ul class="query-group clearfix">
+							<span class="table-title-md" style="line-height: 34px;margin-bottom: 0px;">已添加出库物料</span>
+							<li class="query-li">
+							<button id="btn_add1" type="button" class="sui-btn btn-primary btn-borderadius ml20">添加出库项</button>
+							<button type="button" id="btn_add1-2" class="sui-btn btn-borderadius btn-primaryRed">删除选中项</button>
+							</li>
+						</ul>
+							
+						<div id="table3" class="table-wrapper"></div>
+						<ul class="query-group clearfix">
+							<span class="table-title-md">凭证列表</span>
+						</ul>
+						<div id="table4" class="table-wrapper"></div>
+						<ul class="query-group clearfix">
+							<img src="../../skin/images/ic_default.png" class="arm-img-default">
+							<img src="../../skin/images/ic_default.png" class="arm-img-default">
+							<div class="btn_bdhqupload">
+								<button type="button" class="sui-btn btn-bdhq">本地浏览</button>
+								<input type="file" class="backoricon" previewImg=".arm-img-default" onchange="utilObj.previewFile(this)">
+							</div>
+							<button type="button" class="sui-btn btn-primary">上传</button>
+						</ul>
+						<div class="arm-submit-group">
+							<button type="button" class="sui-btn btn-primary">提交</button>
+							<button type="button" class="sui-btn">取消</button>
+						</div>
+				</div>
+
+			</div>
+		</div>
+		<script id="template2" type="text/html">
+			<div id="myModal2" tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade">	
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<!--<button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close">×</button>-->
+					<h4 id="myModalLabel" class="modal-title">Modal title111</h4>
+				  </div>
+				  <div class="modal-body">
+					<form class="sui-form scrollwidthpop sui-validate label-w">
+						<div id="db-tables1" class="arm-db-tables" style="width:1750px;">
+							<div class="db-table-first">								
+							</div>
+							<div class="db-table-btn">
+								
+								<div style="display: table-cell;vertical-align: middle;">
+									<a href="javascript:void(0);" class="movetoright sui-btn btn-small btn-primary" style="min-width: 70px;width: 70px;display: block;margin: 0 auto;">添加></a>
+									<a href="javascript:void(0);" class="movetoleft sui-btn btn-small btn-primaryRed" style="min-width: 70px;width: 70px;display: block;margin: 0 auto;margin-top: 20px;"><删除</a>
+								</div>
+							</div>
+							<div class="db-table-second">
+							</div>
+						</div>
+						
+				  	</form>
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" data-ok="modal"  class="sui-btn btn-primary btn-large">确定</button>
+					<button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large">取消</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</script>	
+		
+	</body>
+
+</html>

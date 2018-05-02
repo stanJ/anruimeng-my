@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>甲方人员管理</title>
+		<link rel="stylesheet" type="text/css" href="../../skin/css/main.css" />
+		<script src="../../lib/seajs/sea.js" type="text/javascript" charset="utf-8" id="seajsnode"></script>
+		<style type="text/css">
+			.div-selecttype{
+				position: relative;cursor: pointer;
+				display: inline-block;border: 1px solid #BFBFBF; border-radius: 5px;padding: 5px 20px;line-height: 24px;margin-right: 10px;
+			}
+			.div-selecttype:after{
+				position: absolute;
+				right: 5px;top: 5px;
+				content: "";
+				background-color: #BFBFBF;
+				border-radius: 100px;
+				width: 7px;height: 7px;
+			}
+			.div-selecttype.active{
+				color: #379438;
+				-moz-box-shadow:0px 0px 7px #999999; 
+				-webkit-box-shadow:0px 0px 7px #999999; 
+				box-shadow:0px 0px 7px #999999;
+			}
+			.div-selecttype.active:after{
+				background-color: #379438;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="content-wrapper">
+			<div id="content">
+				<span class="arm-title-s">甲方人员管理</span>
+				<div class="arm-nav-wrapper"><span class="arm-nav-text" data-href="firstparty_management">甲方人员管理</span><i class="sui-icon icon-arrow-right arm-nav-arrow"></i><span class="arm-nav-text">组织架构</span></div>
+				<div class="arm-title-first has-back-icon" data-href="firstparty_management"><i class="sui-icon icon-pc-chevron-right"></i>
+					<div class="arm-title-text">组织架构</div>
+					<div class="arm-back-wrapper">
+						
+					</div>
+				</div>
+				<form class="sui-form form-horizontal mt20 clearfix">
+					<ul class="query-group fl">
+						<li>
+							<label class="control-label" style="width: 35px; text-align:left">
+							类型:
+							</label>
+						</li>
+						<li>
+							<div class="div-selecttype active">全部</div>
+							<div class="div-selecttype">已禁用</div>
+							<div class="div-selecttype">已启用</div>
+						</li>
+					</ul>
+					<div style="clear: both;">
+						<div style="display: inline-block;width: 300px;position: absolute;border: 1px solid #BFBFBF;">
+							<div id="div_tree1"></div>
+						</div>
+						<div style="padding-left: 320px;">
+							<div id="div_tb1"></div>
+						</div>
+					</div>
+					
+				</form>
+
+			</div>
+		</div>
+	</body>
+
+</html>

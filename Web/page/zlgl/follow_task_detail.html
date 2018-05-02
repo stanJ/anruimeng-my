@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>跟进任务管理</title>
+		<link rel="stylesheet" type="text/css" href="../../skin/css/main.css" />
+		<script src="../../lib/seajs/sea.js" type="text/javascript" charset="utf-8" id="seajsnode"></script>
+	</head>
+
+	<body>
+		<div id="content-wrapper">
+			<div id="content">
+				<span class="arm-title-s">跟进任务管理</span>
+				<form class="sui-form form-horizontal mt20 clearfix">
+					<div class="arm-detail-wrapper">
+						<div class="arm-nav-wrapper">
+							<span class="arm-nav-text" data-href="follow_task">跟进任务</span>
+							<i class="sui-icon icon-arrow-right arm-nav-arrow"></i>
+							<span class="arm-nav-text">跟进任务详情</span>
+						</div>
+						<div class="arm-title-first has-back-icon" data-href="follow_task"><i class="sui-icon icon-pc-chevron-right"></i>
+							<div class="arm-title-text">跟进任务详情</div>
+							<div class="arm-back-wrapper">
+								
+							</div>
+						</div>
+					</div>
+					<span class="table-title-md">分析处理</span>
+					<div id="table1" class="table-wrapper" style="width: 100%;"></div>
+					<div id="table2" class="table-wrapper" style="width: 100%;"></div>
+					<ul class="query-group clearfix arm-label-xlg">
+						<li>
+							<label class="control-label label-m">
+							  分析任务生成时间
+							</label>
+							<div class="controls">
+								<input type="text" class="input-medium" readonly />
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  分析任务完成时间
+							</label>
+							<div class="controls">
+								<input type="text" class="input-medium" readonly/>
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  分析任务要求完成时间
+							</label>
+							<div class="controls">
+								<input type="text" value="" class="input-medium" readonly />
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  分析任务执行人
+							</label>
+							<div class="controls">
+								<input type="text" value="" class="input-medium" readonly />
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  解决方案描述
+							</label>
+							<div class="controls">
+								<input type="text" value="" class="input-medium" readonly />
+							</div>
+						</li>
+					
+					</ul>
+					<div id="tree1" style="margin-bottom: 30px;"></div>
+					<ul class="query-group clearfix">
+						<li class="input-xl-wrapper">
+							<label class="control-label v-top" style="min-width: 27px;">
+							  结论
+							</label>
+							<div class="controls">
+								<textarea class="input-xlarge input-xl"></textarea>
+							</div>
+						</li>
+					</ul>
+					<div class="arm-block arm-label-lg">
+					<span class="table-title-md">跟进措施</span>
+					<ul class="query-group clearfix">
+						<li>
+							<label class="control-label label-m">
+							  负责人
+							</label>
+							<div class="controls">
+								<input type="text" class="input-medium "/>
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  要求完成时间
+							</label>
+							<div class="controls">
+								<input type="text" class="input-medium input-date"/>
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  提醒
+							</label>
+							<div class="controls">
+								<input type="text" class="input-medium" />
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  问题人1
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  问题人2
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  实际完成时间
+							</label>
+							<div class="controls">
+								<input type="text" value="" class="input-medium input-date"  />
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  是否按时完成
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="control-label label-m">
+							  是否完成
+							</label>
+							<div class="controls">
+								<span class="sui-dropdown dropdown-bordered select">
+										<span class="dropdown-inner">
+											<a id="drop1-1" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+												<input value="" name="city" type="hidden" class="">
+												<i class="caret"></i><span>请选择</span>
+								</a>
+								<ul id="menu1-1" role="menu" aria-labelledby="drop1-1" class="sui-dropdown-menu">
+									<li role="presentation" class="">
+										<a role="menuitem" tabindex="-1" href="javascript:void(0);" value="">请选择</a>
+									</li>
+								</ul>
+								</span>
+								</span>
+							</div>
+						</li>
+						
+					</ul>
+					<ul class="query-group clearfix">
+						<li class="input-xl-wrapper">
+							<label class="control-label v-top" style="min-width: 118px;">
+							    完成情况/未完成原因
+							</label>
+							<div class="controls">
+								<textarea class="input-xlarge input-xl"></textarea>
+							</div>
+						</li>
+					</ul>
+					<ul class="query-group clearfix">
+						<li>
+							<label class="control-label label-m">
+							    上传文件
+							</label>
+							<div class="controls arm-img-wrapper">
+								<img src="../../skin/images/ic_default.png" class="arm-img-default"/>
+								<img src="../../skin/images/ic_default.png" class="arm-img-default"/>
+								<img src="../../skin/images/ic_default.png" class="arm-img-default"/>
+								<div class="btn_bdhqupload" style="margin-left: 20px;">
+									<button type="button" class="sui-btn btn-bdhq">本地浏览</button>
+									<input type="file" class="backoricon">
+								</div>
+								<button type="button" class="sui-btn btn-primary">上传</button>
+							</div>
+						</li>
+					</ul>
+					<!--<span class="zg-text-inline">上传文件</span>-->
+					<!--<img src="../../skin/images/ic_default.png" class="arm-img-default"/>
+					<img src="../../skin/images/ic_default.png" class="arm-img-default"/>
+					<img src="../../skin/images/ic_default.png" class="arm-img-default"/>
+					<div class="btn_bdhqupload">
+						<button type="button" class="sui-btn btn-bdhq">本地浏览</button>
+						<input type="file" class="backoricon">
+					</div>
+					<button type="button" class="sui-btn btn-primary">上传</button>-->
+					<div class="arm-submit-group">
+						<button type="button" class="sui-btn btn-primary">提交</button>
+						<button type="button" class="sui-btn">取消</button>
+					</div>
+				</form>
+
+			</div>
+		</div>
+		<script id="template1" type="text/html">
+			<div id="myModal1" tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade">	
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<!--<button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close">×</button>-->
+					<h4 id="myModalLabel" class="modal-title">Modal title111</h4>
+				  </div>
+				  <div class="modal-body">
+					<form class="sui-form scrollwidthpop sui-validate label-w">
+						<div class="roleAddcontent">
+							<label>
+							  物料大类
+							</label>
+							<input type="text" class="input-medium" readonly />
+							<label>
+							  物料小类
+							</label>
+							<input type="text" class="input-medium" readonly />
+							<label>
+							  物料名称
+							</label>
+							<input type="text" class="input-medium" readonly />
+							<label>
+							  物料规格
+							</label>
+							<input type="text" class="input-medium" readonly />
+							<label>
+							  物料编号
+							</label>
+							<input type="text" class="input-medium" readonly />
+						</div>
+						<div class="roleAddcontent">
+							<label>
+							  仓库名称
+							</label>
+							<input type="text" class="input-medium" readonly />
+							<label>
+							  位置1
+							</label>
+							<input type="text" class="input-medium" readonly />
+							<label>
+							  位置2
+							</label>
+							<input type="text" class="input-medium" readonly />
+							<label>
+							  位置3
+							</label>
+							<input type="text" class="input-medium" readonly />
+							<label>
+							  系统
+							</label>
+							<input type="text" class="input-medium" readonly />
+						</div>
+						<div class="roleAddcontent">
+							<label>
+							  设备
+							</label>
+							<input type="text" class="input-medium" readonly />
+							<label>
+							  设备类别
+							</label>
+							<input type="text" class="input-medium" readonly />
+							<label>
+							  数量
+							</label>
+							<input type="text" class="input-medium" readonly />
+							<label>
+							  单位
+							</label>
+							<input type="text" class="input-medium" readonly />
+							<label>
+							  备注
+							</label>
+							<input type="text" class="input-medium" readonly />
+						</div>
+						<div class="roleAddcontent">
+							<label>
+							  价格区间
+							</label>
+							<input type="text" class="input-medium" readonly />
+						</div>
+						<span class="table-title-sm">出入库批次列表</span>
+						<div class="roleAddcontent">
+							<div id="table3" class="table-wrapper"></div>
+						</div>
+				  	</form>
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large">关闭</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</script>	
+	</body>
+
+</html>
